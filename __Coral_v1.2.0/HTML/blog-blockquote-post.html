@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Coral - Multipurpose Landing Template</title>
+	    <meta name="description" content="Bootstrap 5 Landing Template" />
+	    <meta name="keywords" content="Onepage, creative, modern, bootstrap 5, multipurpose, clean, responsive, business, corporate" />
+	    <meta name="author" content="Shreethemes" />
+	    <meta name="website" content="https://shreethemes.in" />
+	    <meta name="email" content="support@shreethemes.in" />
+	    <meta name="version" content="1.0.0" />
+	    <!-- favicon -->
+        <link href="images/favicon.ico" rel="shortcut icon">
+		<!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+	    <!-- Custom  Css -->
+	    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+	</head>
+
+	<body>
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <a class="logo" href="index.html">
+                    <span class="logo-light-mode">
+                        <img src="images/logo-dark.png" class="l-dark" alt="">
+                        <img src="images/logo-white.png" class="l-light" alt="">
+                    </span>
+                    <img src="images/logo-white.png" class="logo-dark-mode" alt="">
+                </a>
+
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown">
+                            <button type="button" class="dropdown-toggle btn btn-sm p-0 border-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="search" class="fea icon-20 login-btn-primary"></i>
+                                <i data-feather="search" class="fea icon-20 text-white login-btn-light"></i>
+                            </button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white rounded border-0 mt-3 p-0" style="width: 240px;">
+                                <div class="search-bar">
+                                    <div id="itemSearch" class="menu-search mb-0">
+                                        <form role="search" method="get" id="searchItemform" class="searchform">
+                                            <input type="text" class="form-control rounded border" name="s" id="searchItem" placeholder="Search...">
+                                            <input type="submit" id="searchItemsubmit" value="Search">
+                                            <i data-feather="search" class="icons"></i>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-inline-item ps-1 mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div class="btn btn-sm btn-icon btn-pills btn-primary"><i data-feather="settings" class="fea icon-sm"></i></div>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item ps-1 mb-0">
+                        <a href="" class="btn btn-sm btn-primary">Join Now</a>
+                    </li>
+                </ul>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu nav-right nav-light">
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="index.html" class="sub-menu-item">Business</a></li>
+                                <li><a href="index-saas.html" class="sub-menu-item">Saas</a></li>
+                                <li><a href="index-consulting.html" class="sub-menu-item">Consulting</a></li>
+                                <li><a href="index-cryptocurrency.html" class="sub-menu-item">Cryptocurrency</a></li>
+                                <li><a href="index-digital-marketing.html" class="sub-menu-item">Digital Marketing</a></li>
+                                <li><a href="index-finance.html" class="sub-menu-item">Finance</a></li>
+                                <li><a href="index-it-solution.html" class="sub-menu-item">IT Solutions</a></li>
+                                <li><a href="index-hospital.html" class="sub-menu-item">Hospital / Medical</a></li>
+                                <li><a href="index-nft.html" class="sub-menu-item">NFT Marketplace</a></li>
+                                <li><a href="index-minimal-portfolio.html" class="sub-menu-item">Minimal Portfolio</a></li>
+                                <li><a href="index-web-hosting.html" class="sub-menu-item">Web Hosting</a></li>
+                                <li><a href="index-yoga.html" class="sub-menu-item">Yoga</a></li>
+                                <li><a href="index-charity.html" class="sub-menu-item">Charity</a></li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="aboutus.html" class="sub-menu-item">About Us</a></li>
+                        
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="services.html" class="sub-menu-item">Services</a></li>
+                                <li><a href="service-detail.html" class="sub-menu-item">Service Detail</a></li>
+                                <li><a href="pricing.html" class="sub-menu-item">Pricing</a></li>
+                                <li><a href="team.html" class="sub-menu-item">Team</a></li>
+                                <li><a href="testimonial.html" class="sub-menu-item">Testimonial</a></li>
+
+                                <li><a href="faqs.html" class="sub-menu-item">FAQs</a></li>
+
+                                <li class="has-submenu parent-menu-item">
+                                    <a href="javascript:void(0)">NFT</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="nft-explore.html" class="sub-menu-item">NFT Explore</a></li>
+                                        <li><a href="nft-detail.html" class="sub-menu-item">NFT Detail</a></li>
+                                        <li><a href="collection.html" class="sub-menu-item">Collection</a></li>
+                                        <li><a href="wallet.html" class="sub-menu-item">Wallet</a></li>
+                                        <li><a href="upload-item.html" class="sub-menu-item">Upload Item</a></li>
+                                        <li class="has-submenu child-menu-item">
+                                            <a href="javascript:void(0)"> Creators </a><span class="submenu-arrow"></span>
+                                            <ul class="submenu">
+                                                <li><a href="creators.html" class="sub-menu-item">Creators</a></li>
+                                                <li><a href="creator-profile.html" class="sub-menu-item">Creator Profile</a></li>
+                                                <li><a href="profile-setting.html" class="sub-menu-item">Profile Setting</a></li>
+                                            </ul>  
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Auth Pages </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="login.html" class="sub-menu-item"> Login</a></li>
+                                        <li><a href="signup.html" class="sub-menu-item"> Signup</a></li>
+                                        <li><a href="reset-password.html" class="sub-menu-item"> Forgot Password</a></li>
+                                        <li><a href="lock-screen.html" class="sub-menu-item"> Lock Screen</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Utility </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="terms.html" class="sub-menu-item">Terms of Services</a></li>
+                                        <li><a href="privacy.html" class="sub-menu-item">Privacy Policy</a></li>
+                                    </ul>  
+                                </li>
+
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Special </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="comingsoon.html" class="sub-menu-item"> Coming Soon</a></li>
+                                        <li><a href="maintenance.html" class="sub-menu-item"> Maintenance</a></li>
+                                        <li><a href="error.html" class="sub-menu-item"> 404! Error</a></li>
+                                    </ul> 
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li class="has-submenu child-menu-item"><a href="javascript:void(0)"> Modern</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="portfolio-modern-two.html" class="sub-menu-item">Two Column</a></li>
+                                        <li><a href="portfolio-modern-three.html" class="sub-menu-item">Three Column</a></li>
+                                        <li><a href="portfolio-modern-four.html" class="sub-menu-item">Four Column</a></li>
+                                        <li><a href="portfolio-modern-five.html" class="sub-menu-item">Five Column</a></li>
+                                        <li><a href="portfolio-modern-six.html" class="sub-menu-item">Six Column</a></li>
+                                    </ul>  
+                                </li>
+                        
+                                <li class="has-submenu child-menu-item"><a href="javascript:void(0)"> Classic</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="portfolio-classic-two.html" class="sub-menu-item">Two Column</a></li>
+                                        <li><a href="portfolio-classic-three.html" class="sub-menu-item">Three Column</a></li>
+                                        <li><a href="portfolio-classic-four.html" class="sub-menu-item">Four Column</a></li>
+                                        <li><a href="portfolio-classic-five.html" class="sub-menu-item">Five Column</a></li>
+                                        <li><a href="portfolio-classic-six.html" class="sub-menu-item">Six Column</a></li>
+                                    </ul>  
+                                </li>
+                        
+                                <li class="has-submenu child-menu-item"><a href="javascript:void(0)"> Creative</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="portfolio-creative-two.html" class="sub-menu-item">Two Column</a></li>
+                                        <li><a href="portfolio-creative-three.html" class="sub-menu-item">Three Column</a></li>
+                                        <li><a href="portfolio-creative-four.html" class="sub-menu-item">Four Column</a></li>
+                                        <li><a href="portfolio-creative-five.html" class="sub-menu-item">Five Column</a></li>
+                                        <li><a href="portfolio-creative-six.html" class="sub-menu-item">Six Column</a></li>
+                                    </ul>  
+                                </li>
+                        
+                                <li class="has-submenu child-menu-item"><a href="javascript:void(0)"> Masonry</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="portfolio-masonry-two.html" class="sub-menu-item">Two Column</a></li>
+                                        <li><a href="portfolio-masonry-three.html" class="sub-menu-item">Three Column</a></li>
+                                        <li><a href="portfolio-masonry-four.html" class="sub-menu-item">Four Column</a></li>
+                                        <li><a href="portfolio-masonry-five.html" class="sub-menu-item">Five Column</a></li>
+                                        <li><a href="portfolio-masonry-six.html" class="sub-menu-item">Six Column</a></li>
+                                    </ul>  
+                                </li>
+                        
+                                <li><a href="portfolio-detail.html" class="sub-menu-item">Portfolio Detail</a></li>
+                                <li><a href="portfolio-detail-two.html" class="sub-menu-item">Portfolio Detail Two</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Blogs</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="blogs.html" class="sub-menu-item"> Blogs</a></li>
+                                <li><a href="blog-sidebar.html" class="sub-menu-item"> Blog Sidebar</a></li>
+
+                                <li class="has-submenu parent-menu-item">
+                                    <a href="javascript:void(0)">Blog Posts</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="blog-standard-post.html" class="sub-menu-item">Standard Post </a></li>
+                                        <li><a href="blog-gallery-post.html" class="sub-menu-item">Gallery Post </a></li>
+                                        <li><a href="blog-slider-post.html" class="sub-menu-item">Slider Post </a></li>
+                                        <li><a href="blog-link-post.html" class="sub-menu-item">Link Post </a></li>
+                                        <li><a href="blog-story-post.html" class="sub-menu-item">Story Post </a></li>
+                                        <li><a href="blog-youtube-post.html" class="sub-menu-item">Youtube Post </a></li>
+                                        <li><a href="blog-html-video-post.html" class="sub-menu-item">Html Video Post </a></li>
+                                        <li><a href="blog-audio-post.html" class="sub-menu-item">Audio Post </a></li>
+                                        <li><a href="blog-html-audio.html" class="sub-menu-item">Html Audio Post </a></li>
+                                        <li><a href="blog-blockquote-post.html" class="sub-menu-item">Blockquote Post </a></li>
+                                        <li><a href="blog-vimeo-post.html" class="sub-menu-item">Vimeo Post </a></li>
+                                        <li><a href="blog-left-sidebar-post.html" class="sub-menu-item">Left Sidebar Post </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div>
+        </header>
+        <!-- Navbar End -->
+
+        <!-- Hero Start -->
+        <section class="bg-half-170 d-table w-100" style="background: url('images/hero/pages.jpg') center;">
+            <div class="bg-overlay bg-gradient-overlay"></div>
+            <div class="container">
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-12">
+                        <div class="title-heading text-center">
+                            <span class="badge bg-primary">Blockquote</span>
+                            <h5 class="heading fw-semibold mb-0 sub-heading text-white title-dark mt-4">You can choose between multiple languages</h5>
+
+                            <ul class="list-inline text-center mb-0">
+                                <li class="list-inline-item mx-4 mt-4">
+                                    <span class="text-white-50 d-block">Author</span>
+                                    <a href="javascript:void(0)" class="text-white title-dark">Coral</a>
+                                </li>
+
+                                <li class="list-inline-item mx-4 mt-4">
+                                    <span class="text-white-50 d-block">Date</span>
+                                    <span class="text-white title-dark">15th July 2025</span>
+                                </li>
+
+                                <li class="list-inline-item mx-4 mt-4">
+                                    <span class="text-white-50 d-block">Read Time</span>
+                                    <span class="text-white title-dark">5 min read</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="position-middle-bottom">
+                    <nav aria-label="breadcrumb" class="d-block">
+                        <ul class="breadcrumb breadcrumb-muted mb-0 p-0">
+                            <li class="breadcrumb-item"><a href="index.html">Coral</a></li>
+                            <li class="breadcrumb-item"><a href="blogs.html">Blogs</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">You can choose between multiple languages</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- Hero End -->
+         
+        <!-- Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="card border-0 shadow rounded overflow-hidden">
+                            <div class="card-body">
+                                <div class="bg-soft-primary p-4 rounded shadow text-center mb-4">
+                                    <div class="position-relative">
+                                        <div class="blog-line border border-top rounded-0 position-absolute top-50 w-100"></div>
+                                        <div class="p-3 rounded-circle d-inline-flex bg-white z-1 position-relative"><i class="mdi mdi-24px mdi-format-quote-open lh-1"></i></div>
+                                    </div>
+
+                                    <div class="py-3 px-lg-4 my-2">
+                                        <p class="text-dark fst-italic h4 mb-0">“ I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best. ”</p>
+                                        <h6 class="mb-0 mt-3"> - Marilyn Monroe</h6>
+                                    </div>
+
+                                    <div class="position-relative">
+                                        <div class="blog-line border border-top rounded-0 position-absolute top-50 w-100"></div>
+                                        <div class="p-3 rounded-circle d-inline-flex bg-white z-1 position-relative"><i class="mdi mdi-24px mdi-format-quote-close lh-1"></i></div>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-muted">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
+                                <p class="text-muted">Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. If the fill text is intended to illustrate the characteristics of different typefaces, it sometimes makes sense to select texts containing the various letters and symbols specific to the output language.</p>
+                            
+                                <blockquote class="text-center mx-auto blockquote"><i class="mdi mdi-format-quote-open mdi-48px text-muted opacity-2 d-block"></i> The man who comes back through the door in the wall will never be quite the same as the man who went out. <small class="d-block text-muted mt-2">- Coral Template</small></blockquote>
+                            
+                                <p class="text-muted">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space. These alternatives to the classic Lorem Ipsum texts are often amusing and tell short, funny or nonsensical stories.</p>
+                            
+                                <a href="javascript:void(0)" class="badge badge-link bg-primary">Minimal</a>
+                                <a href="javascript:void(0)" class="badge badge-link bg-primary">Interior</a>
+                                <a href="javascript:void(0)" class="badge badge-link bg-primary">Furniture</a>
+                            </div>
+                        </div>
+
+                        <div class="card shadow rounded border-0 mt-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-0">Comments :</h5>
+
+                                <ul class="media-list list-unstyled mb-0">
+                                    <li class="mt-4">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <a class="pe-3" href="#">
+                                                    <img src="images/team/1.jpg" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
+                                                </a>
+                                                <div class="commentor-detail">
+                                                    <h6 class="mb-0"><a href="javascript:void(0)" class="text-dark media-heading">Lorenzo Peterson</a></h6>
+                                                    <small class="text-muted">1st June 2024 at 01:25 pm</small>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="text-muted"><i class="mdi mdi-reply"></i> Reply</a>
+                                        </div>
+                                        <div class="mt-3">
+                                            <p class="text-muted fst-italic p-3 bg-light rounded">" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour "</p>
+                                        </div>
+                                    </li>
+    
+                                    <li class="mt-4">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <a class="pe-3" href="#">
+                                                    <img src="images/team/2.jpg" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
+                                                </a>
+                                                <div class="commentor-detail">
+                                                    <h6 class="mb-0"><a href="javascript:void(0)" class="media-heading text-dark">Tammy Camacho</a></h6>
+                                                    <small class="text-muted">1st June 2024 at 05:44 pm</small>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="text-muted"><i class="mdi mdi-reply"></i> Reply</a>
+                                        </div>
+                                        <div class="mt-3">
+                                            <p class="text-muted fst-italic p-3 bg-light rounded">" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour "</p>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="mt-4">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <a class="pe-3" href="#">
+                                                    <img src="images/team/3.jpg" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
+                                                </a>
+                                                <div class="commentor-detail">
+                                                    <h6 class="mb-0"><a href="javascript:void(0)" class="media-heading text-dark">Tammy Camacho</a></h6>
+                                                    <small class="text-muted">1st June 2024 at 03:44 pm</small>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="text-muted"><i class="mdi mdi-reply"></i> Reply</a>
+                                        </div>
+                                        <div class="mt-3">
+                                            <p class="text-muted fst-italic p-3 bg-light rounded">" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour "</p>
+                                        </div>
+    
+                                        <ul class="list-unstyled ps-4 ps-md-5 sub-comment">
+                                            <li class="mt-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <a class="pe-3" href="#">
+                                                            <img src="images/team/1.jpg" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
+                                                        </a>
+                                                        <div class="commentor-detail">
+                                                            <h6 class="mb-0"><a href="javascript:void(0)" class="text-dark media-heading">Lorenzo Peterson</a></h6>
+                                                            <small class="text-muted">1st June 2024 at 01:25 pm</small>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="text-muted"><i class="mdi mdi-reply"></i> Reply</a>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <p class="text-muted fst-italic p-3 bg-light rounded">" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour "</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card shadow rounded mt-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-0">Leave A Comment :</h5>
+
+                                <form class="mt-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Your Comment</label>
+                                                <textarea id="message" placeholder="Your Comment" rows="5" name="message" class="form-control" required=""></textarea>
+                                            </div>
+                                        </div><!--end col-->
+    
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Name <span class="text-danger">*</span></label>
+                                                <input id="name" name="name" type="text" placeholder="Name" class="form-control" required="">
+                                            </div>
+                                        </div><!--end col-->
+    
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                                <input id="email" type="email" placeholder="Email" name="email" class="form-control" required="">
+                                            </div>
+                                        </div><!--end col-->
+    
+                                        <div class="col-md-12">
+                                            <div class="send d-grid">
+                                                <button type="submit" class="btn btn-pills btn-primary">Send Message</button>
+                                            </div>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </form><!--end form-->
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <!-- START SIDEBAR -->
+                    <div class="col-lg-4 col-md-5 col-12">
+                        <div class="card bg-white p-4 rounded shadow sticky-bar">
+                            <!-- SEARCH -->
+                            <div>
+                                <h6 class="pt-2 pb-2 bg-light rounded text-center">Search</h6>
+
+                                <div class="search-bar mt-4">
+                                    <div id="itemSearch" class="menu-search mb-0">
+                                        <form role="search" method="get" id="searchItemform" class="searchform">
+                                            <input type="text" class="form-control rounded border" name="s" id="searchItem" placeholder="Search...">
+                                            <input type="submit" id="searchItemsubmit" value="Search">
+                                            <i data-feather="search" class="icons"></i>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SEARCH -->
+
+                            <!-- RECENT POST -->
+                            <div class="mt-4">
+                                <h6 class="pt-2 pb-2 bg-light rounded text-center">Recent Post</h6>
+                                <div class="mt-4">
+                                    <div class="blog blog-primary d-flex align-items-center">
+                                        <img src="images/blog/1.jpg" class="avatar avatar-small rounded" style="width: auto;" alt="">
+                                        <div class="flex-1 ms-3">
+                                            <a href="" class="d-block title text-dark fw-medium">Consultant Business</a>
+                                            <span class="text-muted small">15th July 2025</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="blog blog-primary d-flex align-items-center mt-3">
+                                        <img src="images/blog/2.jpg" class="avatar avatar-small rounded" style="width: auto;" alt="">
+                                        <div class="flex-1 ms-3">
+                                            <a href="" class="d-block title text-dark fw-medium">Grow Your Business</a>
+                                            <span class="text-muted small">15th July 2025</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="blog blog-primary d-flex align-items-center mt-3">
+                                        <img src="images/blog/3.jpg" class="avatar avatar-small rounded" style="width: auto;" alt="">
+                                        <div class="flex-1 ms-3">
+                                            <a href="" class="d-block title text-dark fw-medium">Look On The Glorious Balance</a>
+                                            <span class="text-muted small">15th July 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- RECENT POST -->
+
+                            <!-- TAG CLOUDS -->
+                            <div class="mt-4 text-center">
+                                <h6 class="pt-2 pb-2 bg-light rounded">Tags Cloud</h6>
+                                <ul class="tagcloud list-unstyled mt-4">
+                                    <li class="d-inline-flex m-1"><a href="javascript:void(0)" class="rounded fw-medium text-dark py-1 px-2">Business</a></li>
+                                    <li class="d-inline-flex m-1"><a href="javascript:void(0)" class="rounded fw-medium text-dark py-1 px-2">Finance</a></li>
+                                    <li class="d-inline-flex m-1"><a href="javascript:void(0)" class="rounded fw-medium text-dark py-1 px-2">Marketing</a></li>
+                                    <li class="d-inline-flex m-1"><a href="javascript:void(0)" class="rounded fw-medium text-dark py-1 px-2">Fashion</a></li>
+                                    <li class="d-inline-flex m-1"><a href="javascript:void(0)" class="rounded fw-medium text-dark py-1 px-2">Bride</a></li>
+                                    <li class="d-inline-flex m-1"><a href="javascript:void(0)" class="rounded fw-medium text-dark py-1 px-2">Lifestyle</a></li>
+                                    <li class="d-inline-flex m-1"><a href="javascript:void(0)" class="rounded fw-medium text-dark py-1 px-2">Travel</a></li>
+                                    <li class="d-inline-flex m-1"><a href="javascript:void(0)" class="rounded fw-medium text-dark py-1 px-2">Beauty</a></li>
+                                    <li class="d-inline-flex m-1"><a href="javascript:void(0)" class="rounded fw-medium text-dark py-1 px-2">Video</a></li>
+                                    <li class="d-inline-flex m-1"><a href="javascript:void(0)" class="rounded fw-medium text-dark py-1 px-2">Audio</a></li>
+                                </ul>
+                            </div>
+                            <!-- TAG CLOUDS -->
+                        </div>
+                    </div><!--end col-->
+                    <!-- END SIDEBAR -->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Footer Start -->
+        <footer class="bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="py-5">
+                            <div class="row">
+                                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <p>We've cultivated a dynamic space where creativity seamlessly intertwines with strategy and innovation.</p>
+                                    <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                        <li class="list-inline-item"><a href="https://dribbble.com/shreethemes" target="_blank" class="rounded"><i data-feather="dribbble" class="fea icon-sm align-middle" title="dribbble"></i></a></li>
+                                        <li class="list-inline-item"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="rounded"><i data-feather="linkedin" class="fea icon-sm align-middle" title="Linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://www.facebook.com/shreethemes" target="_blank" class="rounded"><i data-feather="facebook" class="fea icon-sm align-middle" title="facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="rounded"><i data-feather="instagram" class="fea icon-sm align-middle" title="instagram"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://twitter.com/shreethemes" target="_blank" class="rounded"><i data-feather="twitter" class="fea icon-sm align-middle" title="twitter"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+                        
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h6 class="footer-head text-uppercase small">Company</h6>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="aboutus.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> About us</a></li>
+                                        <li><a href="services.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Services</a></li>
+                                        <li><a href="team.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Team</a></li>
+                                        <li><a href="pricing.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Pricing</a></li>
+                                        <li><a href="blogs.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Blog</a></li>
+                                        <li><a href="login.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Login</a></li>
+                                    </ul>
+                                </div><!--end col-->
+                        
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h6 class="footer-head text-uppercase small">Usefull Links</h6>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="helpcenter-overview.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Helpcenter</a></li>
+                                        <li><a href="terms.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Terms of Services</a></li>
+                                        <li><a href="privacy.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Privacy Policy</a></li>
+                                    </ul>
+                                </div><!--end col-->
+    
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h6 class="footer-head text-uppercase small">Newsletter</h6>
+                                    <p class="mt-4">Sign up and receive the latest tips via email.</p>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="foot-subscribe mb-3">
+                                                    <label class="form-label">Write your email <span class="text-danger">*</span></label>
+                                                    <div class="form-icon position-relative">
+                                                        <input type="email" name="email" id="submitsubscribe" class="form-control rounded" placeholder="Your email : " required>
+                                                        <div class="position-absolute top-50 end-0 translate-middle-y">
+                                                            <button type="submit" id="submitsubscribe" class="btn btn-sm btn-icon btn-soft-primary me-1">
+                                                                <i data-feather="send" class="icons"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="py-5 footer-bar">
+                            <div class="container text-center">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-6">
+                                        <div class="text-sm-start">
+                                            <a href="#" class="logo-footer">
+                                                <img src="images/logo-light.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div><!--end col-->
+        
+                                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                        <ul class="list-unstyled footer-list terms-service text-sm-end mb-0">
+                                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot fw-medium me-2"><i class="mdi mdi-circle-small"></i> Privacy</a></li>
+                                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot fw-medium me-2"><i class="mdi mdi-circle-small"></i> Terms</a></li>
+                                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot fw-medium me-2"><i class="mdi mdi-circle-small"></i> FAQs</a></li>
+                                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot fw-medium"><i class="mdi mdi-circle-small"></i> Contact</a></li>
+                                        </ul>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end container-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="py-4 footer-bar">
+                <div class="container text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Coral. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Offcanvas Start -->
+        <div class="offcanvas offcanvas-end shadow border-0" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header p-4 border-bottom">
+                <h5 id="offcanvasRightLabel" class="mb-0">
+                    <img src="images/logo-dark.png" class="light-version" alt="">
+                    <img src="images/logo-light.png" class="dark-version" alt="">
+                </h5>
+                <button type="button" class="btn-close d-flex align-items-center text-dark" data-bs-dismiss="offcanvas" aria-label="Close"><i class="mdi mdi-close fs-4"></i></button>
+            </div>
+            <div class="offcanvas-body p-4">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="images/contact.png" class="img-fluid" alt="">
+                        <form>
+                            <div class="my-3 text-center">
+                                <h6 class="text-uppercase mb-0 fw-semibold">Sign In</h6>
+                            </div>
+                        
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Your Email</label>
+                                <input name="email" id="email" type="email" class="form-control" placeholder="example@website.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold" for="loginpass">Password</label>
+                                <input type="password" class="form-control" id="loginpass" placeholder="Password">
+                            </div>
+                        
+                            <div class="d-flex justify-content-between">
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-label form-check-label text-muted" for="flexCheckDefault">Remember me</label>
+                                    </div>
+                                </div>
+                                <span class="forgot-pass text-muted small mb-0"><a href="reset-password.html" class="text-muted">Forgot password ?</a></span>
+                            </div>
+            
+                            <button class="btn btn-primary w-100" type="submit">Sign in</button>
+
+                            <div class="col-12 text-center mt-3">
+                                <span><span class="text-muted me-2 small">Don't have an account ?</span> <a href="signup.html" class="text-dark fw-semibold small">Sign Up</a></span>
+                            </div><!--end col-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offcanvas-footer p-4 border-top text-center">
+                <ul class="list-unstyled social-icon mb-0">
+                    <li class="list-inline-item"><a href="https://dribbble.com/shreethemes" target="_blank" class="rounded"><i data-feather="dribbble" class="fea icon-sm align-middle" title="dribbble"></i></a></li>
+                    <li class="list-inline-item"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="rounded"><i data-feather="linkedin" class="fea icon-sm align-middle" title="Linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com/shreethemes" target="_blank" class="rounded"><i data-feather="facebook" class="fea icon-sm align-middle" title="facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="rounded"><i data-feather="instagram" class="fea icon-sm align-middle" title="instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/shreethemes" target="_blank" class="rounded"><i data-feather="twitter" class="fea icon-sm align-middle" title="twitter"></i></a></li>
+                </ul><!--end icon-->
+            </div>
+        </div>
+        <!-- Offcanvas End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top rounded fs-5"><i data-feather="arrow-up" class="fea icon-sm align-middle"></i></a>
+        <!-- Back to top -->
+
+        <!-- JAVASCRIPTS -->
+	    <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/feather.min.js"></script>
+	    <!-- Custom -->
+	    <script src="js/plugins.init.js"></script>
+	    <script src="js/app.js"></script>
+    </body>
+</html>

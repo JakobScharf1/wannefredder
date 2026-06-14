@@ -1,0 +1,223 @@
+<?php
+$base_dir = __DIR__ . '/Base';
+$static_url = '/Coral/assets'; // Ensure this is the correct path
+
+// Include the common navlink content
+ob_start();
+$navlink_content = ob_get_clean();
+$page= 'nav';
+$fpage= 'foot';
+
+// Optionally define the Hero block content
+ob_start();
+?>
+
+<!-- Hero Start -->
+<section class="bg-half-260 position-relative overflow-hidden pb-5" style="background: url('<?php echo $static_url; ?>/images/hero/bg-crypto.jpg') top no-repeat;">
+    <div class="bg-overlay bg-gradient-overlay"></div>
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+                <div class="title-heading position-relative z-1 margin-top-100">
+                    <h1 class="display-4 text-white title-dark lh-base mb-4">New Digital App for <br> Cryptocurrency</h1>
+                    <p class="para-desc mx-auto text-white-50">Our platform reaches people all over the world, hereby we are trusted as the best platform for crypto trading.</p>
+                    <div class="mt-4 pt-2">
+                        <a href="services.php" class="btn btn-lg btn-pills btn-primary m-1">Join Now</a>
+                        <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="btn btn-lg btn-icon btn-pills btn-soft-primary m-1 lightbox"><i data-feather="video" class="icons"></i></a><span class="fw-bold small text-uppercase text-white title-dark align-middle ms-2">Watch Now</span>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="position-absolute top-0 end-0 translate-middle-y">
+            <img src="<?php echo $static_url; ?>/images/bitcoin.png" class="avatar avatar-large mover" alt="">
+        </div>
+
+        <div class="position-absolute bottom-0 start-0">
+            <img src="<?php echo $static_url; ?>/images/ethereum.png" class="avatar avatar-large mover" alt="">
+        </div>
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row">
+            <div class="col-12">
+                <div class="tiny-three-item-icon">
+                    
+                    <!-- coin-slider code  -->
+                    <?php
+                        include "$base_dir/Components/Home/index-cryptocurrency/coin-slider.php";
+                    ?>
+
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Hero End -->
+
+<!-- Start -->
+<section class="section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <img src="<?php echo $static_url; ?>/images/bitcoin.svg" class="img-fluid" alt="">
+            </div><!--end col-->
+
+            <div class="col-lg-7 col-md-6 mt-4 mt-md-0 pt-2 pt-md-0">
+                <div class="section-title ms-lg-5">
+                    <h4 class="title mb-3">Moving your Existing Solution <br> for Cryptocurrency</h4>
+                    <p class="text-muted para-desc mb-0">Our platform reaches people all over the world, hereby we are trusted as the best platform for crypto trading.</p>
+
+                    <ul class="list-unstyled text-muted mb-0 mt-3">
+                        <li class="mb-1"><span class="text-primary h5 me-2"><i class="mdi mdi-check-circle-outline align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
+                        <li class="mb-1"><span class="text-primary h5 me-2"><i class="mdi mdi-check-circle-outline align-middle"></i></span>Our Talented & Experienced Marketing Agency</li>
+                        <li class="mb-1"><span class="text-primary h5 me-2"><i class="mdi mdi-check-circle-outline align-middle"></i></span>Create your own skin to match your brand</li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a href="" class="btn btn-link primary fs-6">Read More <i class="mdi mdi-arrow-right align-middle"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-3">Cryptocurrency Market</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our platform reaches people all over the world, hereby we are trusted as the best platform for crypto trading.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row justify-content-center">
+            <div class="col-12 mt-4">
+                <div class="table-responsive shadow rounded">
+                    <table class="table mb-0 table-center bg-white">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="fw-normal border-bottom text-muted py-4 px-3" style="min-width: 180px;">Name</th>
+                                <th scope="col" class="fw-normal border-bottom text-muted py-4 px-3" style="min-width: 100px;">Symbol</th>
+                                <th scope="col" class="fw-normal border-bottom text-muted py-4 px-3" style="width: 150px;">Price</th>
+                                <th scope="col" class="fw-normal border-bottom text-muted py-4 px-3" style="width: 150px;">Change(%)</th>
+                                <th scope="col" class="fw-normal border-bottom text-muted py-4 px-3" style="width: 150px;">Change($)</th>
+                                <th scope="col" class="fw-normal border-bottom text-muted py-4 px-3" style="width: 150px;">Marketcap</th>
+                                <th scope="col" class="fw-normal border-bottom text-muted py-4 px-3 text-end" style="width: 100px;">Trade</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            
+                            <!-- table code  -->
+                            <?php
+                                include "$base_dir/Components/Home/index-cryptocurrency/table.php";
+                            ?>
+
+                        </tbody>
+                    </table><!--end table-->
+                </div>
+
+                <div class="mt-4 text-center">
+                    <a href="javascript:void(0)" class="btn btn-link primary fs-6">See More <i class="mdi mdi-arrow-right align-middle"></i></a>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-3">Become a Crypto Trader</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our platform reaches people all over the world, hereby we are trusted as the best platform for crypto trading.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row justify-content-center g-4">
+            
+            <!-- trader code  -->
+            <?php
+                include "$base_dir/Components/Home/index-cryptocurrency/trader.php";
+            ?>
+
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-3">Customer's Review</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our platform reaches people all over the world, hereby we are trusted as the best platform for crypto trading.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-12 mt-4">
+                <div class="tiny-three-item">
+                        
+                    <!-- review2 code  -->
+                    <?php
+                        include "$base_dir/Components/Home/index-saas/review2.php";
+                    ?>
+
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-5 col-12">
+                <img src="<?php echo $static_url; ?>/images/01.png" class="img-fluid mx-auto d-block" alt="">
+            </div><!--end col-->
+
+            <div class="col-lg-7 col-md-7 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="section-title">
+                    <div class="alert alert-light alert-pills text-dark" role="alert">
+                        <span class="badge bg-primary rounded-pill me-1">Apps</span>
+                        <span class="content">Download now <i class="mdi mdi-arrow-right align-middle"></i></span>
+                    </div>
+                    <h4 class="title mb-3">Available for your <br> Smartphones</h4>
+                    <p class="text-muted para-desc mb-0">Our platform reaches people all over the world, hereby we are trusted as the best platform for crypto trading.</p>
+                    <div class="my-4">
+                        <a href="javascript:void(0)">
+                            <img src="<?php echo $static_url; ?>/images/app.png" class="me-2" height="50" alt="">
+                        </a>
+
+                        <a href="javascript:void(0)">
+                            <img src="<?php echo $static_url; ?>/images/playstore.png" height="50" alt="">
+                        </a>
+                    </div>
+
+                    <div class="d-inline-block">
+                        <div class="pt-4 d-flex align-items-center border-top">
+                            <i data-feather="smartphone" class="fea icon-md me-2 text-primary"></i>
+                            <div class="content">
+                                <h6 class="mb-0">Install app now on your cellphones</h6>
+                                <a href="javascript:void(0)" class="text-primary h6">Learn More <i class="mdi mdi-arrow-right"></i></a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End -->
+
+<!-- offcanvas code  -->
+<?php
+    include "$base_dir/Components/Home/index/offcanvas.php";
+?>
+
+<?php
+$hero_content = ob_get_clean();
+
+// Include the base template
+include "$base_dir/style/base.php";
+?>

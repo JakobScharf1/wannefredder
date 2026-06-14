@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Coral - Gatsby.js Documentation</title>
+	    <meta name="description" content="Responsive Bootstrap Landing Template" />
+	    <meta name="keywords" content="" />
+	    <meta name="author" content="Shreethemes" />
+	    <meta name="Email" content="support@shreethemes.in" />
+	    <meta name="Official Website" content="http://www.shreethemes.in" />
+	    <!-- favicon -->
+        <link rel="shortcut icon" href="favicon.ico">
+		<!-- Bootstrap core CSS -->
+	    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<!-- Magnificpopup Css -->
+	    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+	    <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+
+	    <!-- Custom  Css -->
+	    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		
+		<div class="sidenav shadow bg-white">
+			<div class="text-center logo-border border-bottom pt-0 pt-lg-5 pb-0 pb-lg-5">
+				<div class="d-none d-lg-inline-block">
+					<a class="logo scrollbtn" href="#home">
+						<img src="logo-dark.png" height="32" alt="">
+					</a>
+				</div>	
+			</div>	
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-expand-lg navbar-custom bg-white text-white sticky">
+			    <div class="container">
+					<a class="logo text-dark d-inline-block d-lg-none scrollbtn" href="#home"><img src="logo-dark.png" height="32" alt=""></a>
+				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				        <span class="mdi mdi-menu"></span>
+				    </button>
+
+				    <div class="collapse navbar-collapse" id="navbarNav">
+				        <ul class="navbar-nav nav flex-column">
+				            <li class="nav-item">
+				                <a class="nav-link" href="index.html#intro">Introduction</a>
+				            </li>
+				            <li class="nav-item">
+				                <a class="nav-link" href="#setup">Setup React</a>
+				            </li>
+				            <li class="nav-item">
+				                <a class="nav-link" href="#structure">Structures</a>
+				            </li>
+				            <li class="nav-item">
+				                <a class="nav-link" href="#plugin">Plugins</a>
+				            </li>
+				        </ul>
+				    </div>
+			    </div>
+			</nav>
+			<!-- NAVBAR END-->
+
+			<div class="bottom-social social-icon text-center d-none d-lg-inline-block">
+				<ul class="list-unstyled icon">
+					<li class="list-inline-item"><a href="https://dribbble.com/shreethemes" target="_blank" class="rounded"><i class="uil uil-dribbble align-middle" title="dribbble"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.behance.net/shreethemes" target="_blank" class="rounded"><i class="uil uil-behance" title="Behance"></i></a></li>
+					<li class="list-inline-item"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="rounded"><i class="uil uil-linkedin" title="Linkedin"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.facebook.com/shreethemes" target="_blank" class="rounded"><i class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="rounded"><i class="uil uil-instagram align-middle" title="instagram"></i></a></li>
+					<li class="list-inline-item"><a href="https://twitter.com/shreethemes" target="_blank" class="rounded"><i class="uil uil-twitter align-middle" title="twitter"></i></a></li>
+					<li class="list-inline-item"><a href="mailto:support@shreethemes.in" class="rounded"><i class="uil uil-envelope align-middle" title="email"></i></a></li>
+					<li class="list-inline-item"><a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank" class="rounded"><i class="uil uil-file align-middle" title="customization"></i></a></li>
+				</ul>
+				<a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank" class="rounded">Hire Us for Customization</a>
+			</div>
+		</div>
+
+		<div class="main shadow bg-white">
+
+			<!-- Main Title Start -->
+			<section class="py-5 mt-lg-0 mt-5 bg-primary" id="home">
+				<div class="container mt-lg-0 mt-2">
+					<div class="row justify-content-center">
+						<div class="col-12">
+							<div class="text-center">
+								<h3 class="text-white font-weight-bold">Coral - React Gatsby Multipurpose Landing Template</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Main Title End -->
+
+			<!-- structure Start -->
+			<section class="section bg-light" id="setup">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-title mb-4">
+								<h4 class="title">Setup Gatsby</h4>
+
+								<h5 class="mt-4">Introduction</h5>
+								<p class="text-muted mb-0">We are using <a href="https://gulpjs.com/" class="text-primary font-weight-bold" target="_blank">npm</a> which allows having complete automation for build flow. Please follow below steps to install and setup all prerequisites:</p>
+
+								<h5 class="mt-4">Prerequisites</h5>
+								<p class="text-muted mb-0">Please follow below steps to install and setup all prerequisites:</p>
+
+								<ul class="list-unstyled mt-3">
+									
+
+									<li class="d-flex">
+										<i class="mdi mdi-arrow-right"></i>
+										<div class="ml-2">
+											<h6>Nodejs</h6>
+											<p class="text-muted">Make sure to have the <a href="https://nodejs.org/" class="text-primary font-weight-bold" target="_blank">Node.js</a> installed & running in your computer. If you already have installed Node on your computer, you can skip this step if your existing node version is greater than 18.</p>
+										</div>
+									</li>
+
+									<li class="d-flex">
+										<i class="mdi mdi-arrow-right"></i>
+										<div class="ml-2">
+											<h6>Git</h6>
+											<p class="text-muted">Make sure to have the <a href="https://git-scm.com/" class="text-primary font-weight-bold" target="_blank">Git</a> installed globally & running on your computer. If you already have installed git on your computer, you can skip this step.</p>
+										</div>
+									</li>
+								</ul>
+
+								<h5 class="mt-4">Installation</h5>
+								<p class="text-muted mb-0">To setup the admin theme, follow below-mentioned steps:</p>
+
+								<ul class="list-unstyled mt-3">
+									<li class="d-flex">
+										<i class="mdi mdi-arrow-right"></i>
+										<div class="ml-2">
+											<h6>Install Prerequisites</h6>
+											<p class="text-muted">Make sure to have all above prerequisites installed & running on your computer</p>
+										</div>
+									</li>
+								</ul>
+
+								<p class="text-muted mb-4">After you finished with the above steps, you can run the following commands into the terminal / command prompt from the root directory of the project to run the project locally or build for production use:</p>
+
+								<table class="table table-bordered m-0">
+									<thead>
+										<tr>
+											<th style="width: 20%;"><i class="ti-file"></i> Command</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<code>npm i / npm install</code>
+											</td>
+											<td>
+												This would install all the required dependencies in the <code>node_modules</code> folder.
+											</td>
+										</tr>
+	
+										<tr>
+											<td>
+												<code>gatsby develop</code>
+											</td>
+											<td>
+												Runs the project locally, starts the development server and watches for any changes in your code. The development server is accessible at <a href="http://localhost:3000" class="text-primary font-weight-bold" target="_blank">http://localhost:8000</a>.
+											</td>
+										</tr>
+	
+										<tr>
+											<td>
+												<code>gatsby build</code>
+											</td>
+											<td>
+												Generates a <code>/build or dist</code> directory with all the production files.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<h6 class="my-4">If you get an error while running the project, run the following command,</h6>
+								<table class="table table-bordered m-0">
+									<thead>
+										<tr>
+											<th style="width: 20%;"><i class="ti-file"></i> Command</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<code>npm install -g gatsby-cli</code>
+											</td>
+											<td>
+												The Gatsby command line interface (CLI) is the main tool you use to initialize, build and develop Gatsby sites. and Install it globally with <code>npm install -g gatsby-cli</code>, where you execute commands with the syntax gatsby.
+											</td>
+										</tr>
+	
+										<tr>
+											<td>
+												<code>Please click this below link for run project locally</code>
+											</td>
+											<td>
+												Runs the project locally, <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" class="text-primary font-weight-bold" target="_blank">https://aka.ms/vs/17/release/vc_redist.x64.exe</a>.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<!-- <h5 class="mt-4">Tips</h5>
+								<p class="text-muted mb-0"><b>SCSS:</b> We suggest you to do not change any scss files from the assets/scss/custom folders because to get new updates will might be break your SCSS changes if any you have made. We strongly suggest you to create new custom.scss file and use that instead of overwrite any theme's custom scss files.</p> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- structure Start -->
+			<section class="section" id="structure">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-title mb-4">
+								<h4 class="title">Folder & File Structure</h4>
+							</div>
+							<pre class="prettyprint text-muted bg-white mb-0 border p-4 rounded">
+<span class="text-primary h5"><i class="mdi mdi-folder-open"></i> Gatsby</span>  
+    │
+    ├── <b class="text-danger"><i class="mdi mdi-folder-open"></i> src folder</b>
+    │   └── <b class="text-success"><i class="mdi mdi-folder-open"></i> assets</b>
+    │   │   └── <i class="mdi mdi-folder-open text-info"></i> fonts
+    │   │   └── <i class="mdi mdi-folder-open text-info"></i> images
+    │   │   └── <i class="mdi mdi-folder-open text-info"></i> scss
+    │   │       └── <i class="mdi mdi-folder-open text-info"></i> all scss files are here,
+    │   │
+    │   └── <i class="mdi mdi-folder-open text-info"></i> components
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> about.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> blog.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> client.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> cta.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> footer.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> gat-in-touch.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> navbar.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> portfolio.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> pricing.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> services.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> Switcher.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> team.js
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> wrapper.js
+    │   │
+    │   └── <i class="mdi mdi-folder-open text-info"></i> data
+    │   │   └── <i class="mdi mdi-file-document text-secondary"></i> data.js (dynamic data here)
+    │   │
+    │   └── <i class="mdi mdi-folder-open text-info"></i> pages
+    │   │   └── <i class="mdi mdi-folder-open text-info"></i> blog-detail
+    │   │       └──<i class="mdi mdi-file-document text-info"></i> [id].js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> 404.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> index-nine.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> index-eight.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> index-five.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> index-five.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> index-four.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> index-seven.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> index-six.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> index-three.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> index-two.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> index.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> blog-detail.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> portofolio-detail.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> login.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> signup.js
+    │   │   └──<i class="mdi mdi-file-document text-info"></i> reset-password.js
+    │   │
+    │   └── <i class="mdi mdi-folder-open text-info"></i> styles
+    │       └── <i class="mdi mdi-file-document text-secondary"></i> globle.css
+    │
+    └── <i class="mdi mdi-file-document text-secondary"></i> <span class="text-success">gatsby-browser.js</span>
+    └── <i class="mdi mdi-file-document text-secondary"></i> <span class="text-success">gatsby-config.js</span>
+    └── <i class="mdi mdi-file-document text-secondary"></i> <span class="text-success">postcss.config.js</span>
+    └── <i class="mdi mdi-file-document text-secondary"></i> <span class="text-success">package.json</span>
+    └── <i class="mdi mdi-file-document text-secondary"></i> tailwind.config.js
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-title mb-4">
+								<h4 class="title"><i class="uil uil-arrow-right"></i> How to change the <strong class="text-primary">color</strong> in Coral?</h4>
+							</div>
+							<p class="text-muted">It's easy to change your color if your color is indigo-600 to another (red-600, red-400, orange-700, etc. as your theme primary color) please check and read the below link to the customizing colors docs, <a href="https://tailwindcss.com/docs/customizing-colors" target="_blank">https://tailwindcss.com/docs/customizing-colors</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="container mt-5">
+					<div class="row">
+						<div class="col-12">
+							<div class="section-title mb-4">
+								<h4 class="title"><i class="uil uil-arrow-right"></i> How to change the <strong class="text-primary">fonts family</strong> in Coral?</h4>
+							</div>
+							<h6 class="mt-4">Step 1</h6>
+
+							<p class="text-muted">First of all open <code class="font-weight-bold">_fonts.scss</code> <span class="text-success">(path: Coral_Gatsby/src/assets/scss/custom/_fonts.scss)</span> file, <br> and add your font family <br><code>@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');</code> <br> Import the <span class="text-dark font-weight-bold">@import</span> link from your Google Fonts.</p>
+
+							<h6 class="mt-4">Step 2</h6>
+							<p class="text-muted">Please open the <code>tailwind.config.js</code> and please create your google fonts name in the <code>module.exports > theme > fontFamily</code> <br> For example: <code>'rubik': ['"Rubik", sans-serif'],</code> add your Google fonts like the above example.</p>
+
+							<h6 class="mt-4">Step 3</h6>
+							<p class="text-muted">Direct use your font family as per class based <code>font-rubik</code></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<h5 class="mt-5 mb-3" id="plugin"><i class="mdi mdi-chevron-right"></i> Plugins</h5>
+							
+					<p class="text-muted mb-0">Here is the list of plugin which used in Coral React:</p>
+
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th><i class="ti-file"></i> Plugin</th>
+								<th style="width: 20%;">Version</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>gatsby</td>
+								<td>5.13.3</td>
+							</tr>
+							
+							<tr>
+								<td>react</td>
+								<td>19.0.0</td>
+							</tr>
+							
+							<tr>
+								<td>Bootstrap</td>
+								<td>5.3.7</td>
+							</tr>
+														
+							<tr>
+								<td>autoprefixer</td>
+								<td>10.4.19</td>
+							</tr>
+							
+							<tr>
+								<td>gatsby-plugin-postcss</td>
+								<td>6.13.1</td>
+							</tr>
+							
+							<tr>
+								<td>gatsby-plugin-sass</td>
+								<td>6.13.1</td>
+							</tr>
+							
+							<tr>
+								<td>postcss</td>
+								<td>8.4.38</td>
+							</tr>
+							
+							<tr>
+								<td>react-18-image-lightbox</td>
+								<td>5.1.4</td>
+							</tr>
+							
+							<tr>
+								<td>react-countup</td>
+								<td>6.5.3</td>
+							</tr>
+							
+							<tr>
+								<td>react-dom</td>
+								<td>18.2.0</td>
+							</tr>
+							
+							<tr>
+								<td>react-modal-video</td>
+								<td>2.0.1</td>
+							</tr>
+							
+							<tr>
+								<td>react-scroll</td>
+								<td>1.9.0</td>
+							</tr>
+							
+							<tr>
+								<td>react-type-animation</td>
+								<td>3.2.0</td>
+							</tr>
+							
+							<tr>
+								<td>sass</td>
+								<td>1.72.0</td>
+							</tr>
+							
+							<tr>
+								<td>swiper</td>
+								<td>11.1.0</td>
+							</tr>
+							
+							<tr>
+								<td>tiny-slider-react</td>
+								<td>0.5.7</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+			<!-- structure End -->
+
+			<!-- Thankyou Start -->
+			<section class="py-3 bg-primary">
+				<div class="container mt-lg-0 mt-2">
+					<div class="row justify-content-center">
+						<div class="col-12">
+							<div class="text-center">
+								<h5 class="text-white mb-0">Thank you very much for your purchase !</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Thankyou End -->
+
+			<!-- Footer Start -->
+			<footer class="bg-dark py-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Coral. Design & Develop with <i class="mdi mdi-heart text-danger"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer End -->
+
+			<!-- JAVASCRIPTS -->
+		    <script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.bundle.min.js"></script>
+			<script src="js/jquery.easing.min.js"></script>
+			<script src="js/scrollspy.min.js"></script>
+		    <!-- Custom -->
+			<script src="js/app.js"></script>
+		</div>		
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<?php foreach ($creators as $item): ?>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="position-relative rounded shadow overflow-hidden">
+            <div class="bg-gradient-primary p-4 pt-5"></div>
+            <div class="position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle">
+                    <img src="<?= base_url($item['img']) ?>" class="avatar avatar-small rounded-pill shadow-sm img-thumbnail bg-light" alt="">
+                </div>
+                <div class="content text-center p-4">
+                    <div class="mt-4">
+                        <a href="<?= base_url('/creator-profile') ?>" class="text-dark h6 link-title mb-0"><?= esc($item['name']) ?></a>
+                    </div>
+                    <small class="text-muted"><?= esc($item['title']) ?></small>
+
+                    <div class="mt-3">
+                        <a href="javascript:void(0)" class="btn btn-sm btn-soft-primary"><?= esc($item['btn']) ?></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endforeach; ?>

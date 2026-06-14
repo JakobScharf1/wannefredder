@@ -1,0 +1,52 @@
+/*eslint-disable jsx-a11y/control-has-associated-label */
+import React from 'react'
+import { Link } from 'gatsby'
+
+import { cryptoData } from '../../data/data'
+
+export default function CryptoTable() {
+  return (
+        <div className="row justify-content-center">
+            <div className="col-12 mt-4">
+                <div className="table-responsive shadow rounded">
+                    <table className="table mb-0 table-center bg-white">
+                        <thead>
+                            <tr>
+                                <th scope="col" className="fw-normal border-bottom text-muted py-4 px-3" style={{minWidth: '180px'}}>Name</th>
+                                <th scope="col" className="fw-normal border-bottom text-muted py-4 px-3" style={{minWidth: '100px'}}>Symbol</th>
+                                <th scope="col" className="fw-normal border-bottom text-muted py-4 px-3" style={{width: '150px'}}>Price</th>
+                                <th scope="col" className="fw-normal border-bottom text-muted py-4 px-3" style={{width: '150px'}}>Change(%)</th>
+                                <th scope="col" className="fw-normal border-bottom text-muted py-4 px-3" style={{width: '150px'}}>Change($)</th>
+                                <th scope="col" className="fw-normal border-bottom text-muted py-4 px-3" style={{width: '150px'}}>Marketcap</th>
+                                <th scope="col" className="fw-normal border-bottom text-muted py-4 px-3 text-end" style={{width: '100px'}}>Trade</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {cryptoData.map((item,index)=>(
+                                <tr key={index}>
+                                    <th className="p-3">
+                                        <div className="align-items-center">
+                                            <img src={item.image} className="me-2 avatar avatar-ex-small" alt=""/>
+                                            <p className="mb-0 d-inline text-dark fw-normal h6">{item.name1}</p>
+                                        </div>
+                                    </th>
+                                    <td className="p-3 text-muted fw-medium">{item.name2}</td>
+                                    <td className="p-3 text-dark">{item.price}</td>
+                                    <td className={`p-3 ${item.text}`}>{item.change1}</td>
+                                    <td className={`p-3 ${item.text}`}>{item.change2}</td>
+                                    <td className="text-muted p-3">{item.marketCap}</td>
+                                    <td className="p-3 text-end"><Link to="#!" className="btn btn-sm btn-primary">Trade</Link></td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className="mt-4 text-center">
+                    <Link to="#!" className="btn btn-link primary fs-6">See More <i className="mdi mdi-arrow-right align-middle"></i></Link>
+                </div>
+            </div>
+        </div>
+  )
+}

@@ -1,0 +1,16 @@
+{% for item in contacts %}
+    <div class="{{ item.style }}">
+        <div class="position-relative features text-center mx-lg-4 px-md-1">
+            <div class="position-relative d-flex justify-content-center">
+                <i data-feather="{{ item.icon }}" class="fea icon-md text-primary z-1"></i>
+                <div class="feature-icon bg-soft-primary position-absolute top-0 translate-middle"></div>
+            </div>
+
+            <div class="mt-4">
+                <h5 class="mb-3">{{ item.title }}</h5>
+                <p class="text-muted">{{ item.desc }} <br>{{ item.desc1 }}</p>
+                <a href="{{ item.link }}" class="text-primary">{{ item.name }}</a>
+            </div>
+        </div>
+    </div>
+{% endfor %}

@@ -1,0 +1,211 @@
+<!-- Start -->
+<tr>
+    <th class="text-center py-5">09:00AM</th>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/01.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Calvin Carlo</h6>
+                <small class="text-muted">Eye Care</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00AM - 10:00AM</small>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/03.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Alia Reddy</h6>
+                <small class="text-muted">Psychotherapy</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00AM - 01:00PM</small>
+    </td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <th class="text-center py-5">11:00AM</th>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/02.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Cristino Murphy</h6>
+                <small class="text-muted">Gynecology</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">11:00AM - 04:00PM</small>
+    </td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/05.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Jennifer Ballance</h6>
+                <small class="text-muted">Cardiology</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">11:00AM - 12:00PM</small>
+    </td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/04.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Toni Kovar</h6>
+                <small class="text-muted">Orthopedic</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00AM - 10:00AM</small>
+    </td>
+    <td></td>
+</tr>
+
+<tr>
+    <th class="text-center py-5">02:00PM</th>
+    <td></td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/06.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Tara Arrington</h6>
+                <small class="text-muted">Neurology</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">02:00PM - 04:00PM</small>
+    </td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/05.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Jennifer Ballance</h6>
+                <small class="text-muted">Cardiology</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">11:00AM - 12:00PM</small>
+    </td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <th class="text-center py-5">04:00PM</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/06.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Tara Arrington</h6>
+                <small class="text-muted">Neurology</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">04:00PM - 05:00PM</small>
+    </td>
+    <td></td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/06.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Tara Arrington</h6>
+                <small class="text-muted">Neurology</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">04:30PM - 06:00PM</small>
+    </td>
+</tr>
+
+<tr>
+    <th class="text-center py-5">06:00PM</th>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/03.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Alia Reddy</h6>
+                <small class="text-muted">Psychotherapy</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">06:00PM - 09:00PM</small>
+    </td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/04.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Toni Kovar</h6>
+                <small class="text-muted">Orthopedic</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">07:00PM - 08:00PM</small>
+    </td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/05.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Jennifer Ballance</h6>
+                <small class="text-muted">Cardiology</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">06:00PM - 07:00PM</small>
+    </td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/03.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Alia Reddy</h6>
+                <small class="text-muted">Psychotherapy</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">06:00PM - 07:00PM</small>
+    </td>
+</tr>
+
+<tr>
+    <th class="text-center py-5">09:00PM</th>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/04.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Toni Kovar</h6>
+                <small class="text-muted">Orthopedic</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00PM - 10:00PM</small>
+    </td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/05.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Jennifer Ballance</h6>
+                <small class="text-muted">Cardiology</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00PM - 10:00PM</small>
+    </td>
+    <td></td>
+    <td>
+        <div class="d-flex mb-3">
+            <img src="<?= $this->Url->build('/assets/images/team/04.jpg'); ?>" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+            <div class="ms-3">
+                <h6 class="text-dark mb-0 d-block">Toni Kovar</h6>
+                <small class="text-muted">Orthopedic</small>
+            </div>
+        </div>
+        <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00PM - 10:00PM</small>
+    </td>
+    <td></td>
+    <td></td>
+</tr>
+<!-- End -->

@@ -1,0 +1,23 @@
+{% for item in blogs %}
+    <div class="col-lg-6 col-12">
+        <div class="blog position-relative overflow-hidden shadow rounded p-4">
+            <div class="position-relative">
+                <div class="blog-image position-relative overflow-hidden rounded shadow">
+                    <img src="{{ item.img }}" class="img-fluid" alt="">
+                </div>
+
+                <div class="position-absolute top-100 start-0 translate-middle-y ms-2">
+                    <a href="" class="badge bg-primary">{{ item.name }}</a>
+                </div>
+            </div>
+
+            <div class="pt-4">
+                <a href="{% url 'App:blog_standard_post' title=item.title|slugify %}" class="text-dark title h5">{{ item.title }}</a>
+
+                <p class="text-muted my-2">{{ item.desc }}</p>
+
+                <a href="{% url 'App:blog_standard_post' title=item.title|slugify %}" class="text-dark read-more">Read More <i class="mdi mdi-chevron-right align-middle"></i></a>
+            </div>
+        </div>
+    </div>
+{% endfor %}

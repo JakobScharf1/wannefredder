@@ -1,0 +1,48 @@
+<?php
+$base_dir = __DIR__ . '/Base';
+$static_url = '/Coral/assets'; // Ensure this is the correct path
+
+// Include the common navlink content
+ob_start();
+$navlink_content = ob_get_clean();
+
+// Optionally define the Hero block content
+ob_start();
+?>
+ 
+<section class="bg-home d-flex align-items-center" style="background: url('<?php echo $static_url; ?>/images/hero/auth.jpg') center;">
+    <div class="bg-overlay bg-linear-gradient-2"></div>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="p-4 bg-white rounded shadow-md mx-auto w-100" style="max-width: 400px;">
+                    <form>
+                        <a href="index.php"><img src="<?php echo $static_url; ?>/images/logo-dark.png" class="mb-4 d-block mx-auto" alt=""></a>
+                        <h6 class="mb-2 text-uppercase fw-semibold">Reset your password</h6>
+
+                        <p class="text-muted">Please enter your email address. You will receive a link to create a new password via email.</p>
+                    
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">Your Email</label>
+                            <input name="email" id="email" type="email" class="form-control" placeholder="example@website.com">
+                        </div>
+        
+                        <button class="btn btn-primary w-100" type="submit">Send</button>
+
+                        <div class="col-12 text-center mt-3">
+                            <span><span class="text-muted small me-2">Remember your password ? </span> <a href="login.php" class="text-dark fw-semibold small">Sign in</a></span>
+                        </div><!--end col-->
+                    </form>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- ENd Hero -->
+        
+<?php
+$hero_content = ob_get_clean();
+
+// Include the base template
+include "$base_dir/style/no-header.php";
+?>

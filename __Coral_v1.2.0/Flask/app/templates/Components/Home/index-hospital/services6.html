@@ -1,0 +1,16 @@
+{% for item in services[6:11] %}
+    <div class="col">
+        <div class="position-relative features fea-medical text-center rounded shadow p-4">
+            <div class="position-relative d-flex justify-content-center">
+                <img src="{{ item.img }}" class="avatar avatar-md-sm z-1" alt="">
+                <div class="feature-icon bg-soft-primary position-absolute top-50 start-50 translate-middle avatar avatar-small"></div>
+            </div>
+
+            <div class="mt-4">
+                <a href="{{ url_for('main.service_detail', title=slugify(item.title)) }}" class="h5 text-dark link-title">{{ item.title }}</a>
+                <p class="text-muted mt-3">{{ item.desc }}</p>
+                <a href="{{ url_for('main.service_detail', title=slugify(item.title)) }}" class="text-primary">Read More <i class="mdi mdi-arrow-right align-middle"></i></a>
+            </div>
+        </div>
+    </div>
+{% endfor %}

@@ -1,0 +1,405 @@
+<?php
+$base_dir = __DIR__ . '/Base';
+$static_url = '/Coral/assets'; // Ensure this is the correct path
+
+// Include the common navlink content
+ob_start();
+$navlink_content = ob_get_clean();
+$page= 'nav2';
+$fpage= 'foot';
+
+// Optionally define the Hero block content
+ob_start();
+?>
+
+<!-- Hero Start -->
+<section class="bg-half-170 d-table w-100 bg-yoga">
+    <div class="container position-relative z-1">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="title-heading">
+                    <span class="badge bg-soft-primary">Welcome to Coral</span>
+                    <h1 class="heading my-3">Yoga, Meditation,  <br> and  Wellness for <br> a <span class="text-primary"><span class="typewrite" data-period="2000" data-type='[ "Balanced", "Healthy", "Fit & Fine"]'></span> Life</span></h1>
+                    <p class="para-desc text-muted">Yoga is a light, which once lit will never dim. The better your practice, the brighter your flame with Coral.</p>
+                    <div class="mt-4 pt-2">
+                        <a href="services.php" class="btn btn-outline-primary">Get Started <i class="mdi mdi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-md-6">
+                <div class="position-relative">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="tiny-single-item-no-nav">
+                                <div class="tiny-slide">
+                                    <img src="<?php echo $static_url; ?>/images/hero1.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="tiny-slide">
+                                    <img src="<?php echo $static_url; ?>/images/hero2.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="tiny-slide">
+                                    <img src="<?php echo $static_url; ?>/images/hero3.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="tiny-slide">
+                                    <img src="<?php echo $static_url; ?>/images/hero4.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute top-0 start-0 z-n1">
+                        <img src="<?php echo $static_url; ?>/images/hero/yoga-hero.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Hero End -->
+
+<!-- Start -->
+<section class="section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="position-relative">
+                    <div class="me-lg-5 me-4">
+                        <img src="<?php echo $static_url; ?>/images/about/yoga3.jpg" class="img-fluid rounded border border-4 shadow" alt="">
+                    </div>
+                    
+                    <div class="position-absolute top-50 end-0">
+                        <img src="<?php echo $static_url; ?>/images/about/yoga2.jpg" class="img-fluid avatar avatar-xl-large w-auto rounded border border-4 shadow" alt="">
+
+                        <div class="position-absolute top-0 start-0 translate-middle">
+                            <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="avatar avatar-md-md rounded-pill shadow card d-flex justify-content-center align-items-center lightbox">
+                                <i class="mdi mdi-play mdi-24px text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+            </div><!--end col-->
+
+            <div class="col-md-6 mt-4 mt-md-0 pt-2 pt-md-0">
+                <div class="section-title ms-lg-4">
+                    <h4 class="title mb-3">Shape Your <br> Perfect Body with Coral</h4>
+                    <p class="para-desc mx-auto text-muted mb-0">Yoga is a light, which once lit will never dim. The better your practice, the brighter your flame with Coral. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+
+                    <div class="mt-4">
+                        <a href="#schedule" class="btn btn-soft-primary">Check Schedule <i class="mdi mdi-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <!-- counter4 code  -->
+                        <?php
+                            include "$base_dir/Components/Home/index-yoga/counter4.php";
+                        ?>
+
+                    </div><!--end row-->
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-3">Yoga Asanas</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Yoga is a light, which once lit will never dim. The better your practice, the brighter your flame with Coral.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row g-4">
+            
+            <!-- services8 code  -->
+            <?php
+                include "$base_dir/Components/Home/index-yoga/services8.php";
+            ?>
+
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End -->
+
+<!-- Start CTA -->
+<section class="cta-video-section position-relative">
+    <video class="" autoplay loop>
+        <source src="<?php echo $static_url; ?>/images/video.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 col-10">
+                <div class="position-relative z-1 p-4 rounded shadow bg-white">
+                    <div class="tiny-single-item">
+                        
+                        <!-- review4 code  -->
+                        <?php
+                            include "$base_dir/Components/Home/index-yoga/review4.php";
+                        ?>
+
+                    </div>
+
+                    <i class="mdi mdi-format-quote-open text-primary position-absolute top-50 start-50 translate-middle z-n1 testi-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--end section-->
+<!-- End CTA -->
+
+<!-- Start -->
+<section class="section" id="schedule">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-3">Yoga Schedule</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Yoga is a light, which once lit will never dim. The better your practice, the brighter your flame with Coral.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <ul class="nav nav-pills nav-justified flex-column mb-0 sticky-bar" id="pills-tab" role="tablist">
+                    
+                    <!-- nav code  -->
+                    <?php
+                        include "$base_dir/Components/Home/index-yoga/nav.php";
+                    ?>
+
+                </ul><!--end nav pills-->
+            </div><!--end col-->
+
+            <div class="col-md-8 col-12">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="mondayschedule">
+                        <div class="table-responsive bg-white shadow rounded">
+                            <table class="table mb-0 table-center">
+                                <tbody>
+                                    
+                                    <!-- monday code  -->
+                                    <?php
+                                        include "$base_dir/Components/Home/index-yoga/monday.php";
+                                    ?>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!--end teb pane-->
+                    
+                    <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesdayschedule">
+                        <div class="table-responsive bg-white shadow rounded">
+                            <table class="table mb-0 table-center">
+                                <tbody>
+                                    
+                                    <!-- tuesday code  -->
+                                    <?php
+                                        include "$base_dir/Components/Home/index-yoga/tuesday.php";
+                                    ?>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!--end teb pane-->
+
+                    <div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesdayschedule">
+                        <div class="table-responsive bg-white shadow rounded">
+                            <table class="table mb-0 table-center">
+                                <tbody>
+                                    
+                                    <!-- wednesday code  -->
+                                    <?php
+                                        include "$base_dir/Components/Home/index-yoga/wednesday.php";
+                                    ?>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!--end teb pane-->
+                    
+                    <div class="tab-pane fade" id="thursday" role="tabpanel" aria-labelledby="thursdayschedule">
+                        <div class="table-responsive bg-white shadow rounded">
+                            <table class="table mb-0 table-center">
+                                <tbody>
+                                    
+                                    <!-- thursday code  -->
+                                    <?php
+                                        include "$base_dir/Components/Home/index-yoga/thursday.php";
+                                    ?>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!--end teb pane-->
+                    
+                    <div class="tab-pane fade" id="friday" role="tabpanel" aria-labelledby="fridayschedule">
+                        <div class="table-responsive bg-white shadow rounded">
+                            <table class="table mb-0 table-center">
+                                <tbody>
+                                    
+                                    <!-- friday code  -->
+                                    <?php
+                                        include "$base_dir/Components/Home/index-yoga/friday.php";
+                                    ?>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!--end teb pane-->
+                    
+                    <div class="tab-pane fade" id="saturday" role="tabpanel" aria-labelledby="saturdayschedule">
+                        <div class="table-responsive bg-white shadow rounded">
+                            <table class="table mb-0 table-center">
+                                <tbody>
+                                    
+                                    <!-- saturday code  -->
+                                    <?php
+                                        include "$base_dir/Components/Home/index-yoga/saturday.php";
+                                    ?>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!--end teb pane-->
+                </div><!--end tab content-->
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-3">Meet Our Coaches</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Yoga is a light, which once lit will never dim. The better your practice, the brighter your flame with Coral.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row g-4">
+            
+            <!-- coaches code  -->
+            <?php
+                include "$base_dir/Components/Home/index-yoga/coaches.php";
+            ?>
+
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60 overflow-hidden">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="position-relative">
+                    <img src="<?php echo $static_url; ?>/images/faqs.png" class="img-fluid" alt="">
+
+                    <div class="modern-app-round round-small"></div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-6 col-md-6 mt-4 mt-md-0 pt-2 pt-md-0">
+                <div class="section-title mb-4 ms-lg-3">
+                    <h4 class="title mb-3">Frequently Asked Questions</h4>
+                    <p class="text-muted para-desc mb-0">Yoga is a light, which once lit will never dim. The better your practice, the brighter your flame with Coral.</p>
+                
+                    <div class="accordion mt-4 pt-2" id="buyingquestion">
+                        <div class="accordion-item rounded shadow">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button border-0 bg-white shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    How does it work ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse border-0 collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#buyingquestion">
+                                <div class="accordion-body text-muted">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item rounded shadow mt-2">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button border-0 bg-white shadow collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Do I need a designer to use Coral ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#buyingquestion">
+                                <div class="accordion-body text-muted">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item rounded shadow mt-2">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button border-0 bg-white shadow collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What do I need to do to start selling ?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#buyingquestion">
+                                <div class="accordion-body text-muted">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item rounded shadow mt-2">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button border-0 bg-white shadow collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What happens when I receive an order ?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse border-0 collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#buyingquestion">
+                                <div class="accordion-body text-muted">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-3">Blog Or News</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Yoga is a light, which once lit will never dim. The better your practice, the brighter your flame with Coral.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row g-4">
+            
+            <!-- blog code  -->
+            <?php
+                include "$base_dir/Components/Home/index/blog.php";
+            ?>
+
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End -->
+
+<!-- offcanvas code  -->
+<?php
+    include "$base_dir/Components/Home/index/offcanvas.php";
+?>
+
+<?php
+$hero_content = ob_get_clean();
+
+// Include the base template
+include "$base_dir/style/base.php";
+?>

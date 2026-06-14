@@ -1,0 +1,279 @@
+<?php
+$base_dir = __DIR__ . '/Base';
+$static_url = '/Coral/assets'; // Ensure this is the correct path
+
+// Include the common navlink content
+ob_start();
+$navlink_content = ob_get_clean();
+$page= 'nav7';
+$fpage= 'foot';
+
+// Optionally define the Hero block content
+ob_start();
+?>
+
+<!-- Start -->
+<section class="bg-half-170 bg-primary bg-gradient">
+    <div class="bg-overlay bg-transparent" style="background: url('<?php echo $static_url; ?>/images/hero/bg-hosting.png') center center;"></div>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="title-heading">
+                    <h1 class="display-4 text-white my-3">Get Web Hosting at just <span class="text-danger">$2.99/month</span>*</h1>
+                    <p class="para-desc text-white-50">Select your hosting solution and we will help you narrow down our best high-speed options to fit your needs with Coral.</p>
+                    
+                    <div class="subscribe-form mt-4 py-2">
+                        <form class="mx-auto" action="index.php">
+                            <input type="email" id="SubscribeEmail" class="border bg-white rounded-pill" style="opacity: 0.85;" required placeholder="Enter your email">
+                            <button type="submit" class="btn btn-pills btn-danger">Subscribe Now</button>
+                        </form><!--end form-->
+                    </div>
+
+                    <span class="text-white-50">*3-day trial without credit card</span>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-6 col-md-6">
+                <div class="ms-lg-4">
+                    <img src="<?php echo $static_url; ?>/images/hero/hosting-hero.png" class="img-fluid" alt="">
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end Section-->
+<!-- End -->
+
+<!-- Start -->
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="features-absolute">
+                    <div class="row row-cols-lg-5 row-cols-md-3 row-cols-lg-2 row-cols-lg-1 g-4">
+                        
+                        <!-- hosting code  -->
+                        <?php
+                            include "$base_dir/Components/Home/index-web-hosting/hosting.php";
+                        ?>
+
+                    </div><!--end row-->
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <img src="<?php echo $static_url; ?>/images/about.png" class="img-fluid" alt="">
+            </div><!--end col-->
+
+            <div class="col-lg-7 col-md-6 mt-4 mt-md-0 pt-2 pt-md-0">
+                <div class="section-title ms-lg-5">
+                    <h6 class="text-primary text-uppercase">About Us</h6>
+                    <h4 class="title mb-3">About Coral Hosting</h4>
+
+                    <p class="text-muted para-desc">Select your hosting solution and we will help you narrow down our best high-speed options to fit your needs with Coral.</p>
+                    <p class="text-muted para-desc mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora facere commodi ex ipsum, optio vitae rerum quisquam ducimus eaque minima voluptas iste consequatur nostrum. Harum rem laudantium error quidem tempora.</p>
+
+                    <ul class="list-unstyled text-muted mb-0 mt-3">
+                        <li class="mb-1"><span class="text-primary h5 me-2"><i class="mdi mdi-check-circle-outline align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
+                        <li class="mb-1"><span class="text-primary h5 me-2"><i class="mdi mdi-check-circle-outline align-middle"></i></span>Our Talented & Experienced Marketing Agency</li>
+                        <li class="mb-1"><span class="text-primary h5 me-2"><i class="mdi mdi-check-circle-outline align-middle"></i></span>Create your own skin to match your brand</li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a href="" class="btn btn-link primary fs-6">Read More <i class="mdi mdi-arrow-right align-middle"></i></a>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container-fluid position-relative pt-5 mt-100 mt-60">
+        <div class="bg-overlay opacity-25" style="background: url('<?php echo $static_url; ?>/images/map.png') center center;"></div>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-3">Trusted by more than 10K users</h4>
+                        <p class="text-muted para-desc mb-0 mx-auto">Select your hosting solution and we will help you narrow down our best high-speed options to fit your needs with Coral.</p>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row">
+                
+                <!-- counter3 code  -->
+                <?php
+                    include "$base_dir/Components/Home/index-web-hosting/counter3.php";
+                ?>
+
+            </div><!--end row-->
+        </div><!--end container-->
+    </div><!--end container-->
+
+    <div class="container-fluid mt-100 mt-60">
+        <div class="rounded-3 position-relative overflow-hidden py-5 px-4" style="background: url('<?php echo $static_url; ?>/images/hero/pages.jpg') fixed;">
+            <div class="bg-overlay bg-primary opacity-75"></div>
+            <div class="row py-md-5 py-4">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center g-4">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="section-title">
+                                <h6 class="text-white title-dark mb-3">Hosting Flash Sale</h6>
+                                <h2 class="text-white title-dark mb-0">Hosting Flash Sale Web Hosting, Domain Name and Hosting Center Solutions</h2>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <ul class="list-unstyled mb-0 ms-lg-5">
+                                <li class="text-white-50 my-2"><i data-feather="arrow-right-circle" class="fea icon-ex-md me-1"></i> Ultrafast Data Read/Write Speeds</li>
+                                <li class="text-white-50 my-2"><i data-feather="arrow-right-circle" class="fea icon-ex-md me-1"></i> Enterprise Grade Hardware</li>
+                                <li class="text-white-50 my-2"><i data-feather="arrow-right-circle" class="fea icon-ex-md me-1"></i> Highest Data Protection Reliability</li>
+                            </ul>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div><!--end row-->
+        </div><!--end div-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-3">Client Stories</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Select your hosting solution and we will help you narrow down our best high-speed options to fit your needs with Coral.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row">
+            <div class="col-12 mt-4">
+                <div class="tiny-three-item">
+                        
+                    <!-- review2 code  -->
+                    <?php
+                        include "$base_dir/Components/Home/index-saas/review2.php";
+                    ?>
+
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-3">Explore Our Hosting Pricing</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Select your hosting solution and we will help you narrow down our best high-speed options to fit your needs with Coral.</p>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+
+        <div class="row g-4">
+            
+            <!-- pricing code  -->
+            <?php
+                include "$base_dir/Components/Home/index-it-solution/pricing.php";
+            ?>
+
+        </div><!--end row-->
+    </div><!--end container-->
+
+    <div class="container mt-100 mt-60 overflow-hidden">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="position-relative">
+                    <img src="<?php echo $static_url; ?>/images/faqs.png" class="img-fluid" alt="">
+
+                    <div class="modern-app-round round-small"></div>
+                </div>
+            </div><!--end col-->
+
+            <div class="col-lg-6 col-md-6 mt-4 mt-md-0 pt-2 pt-md-0">
+                <div class="section-title ms-lg-3">
+                    <h4 class="title mb-3">Frequently Asked Questions</h4>
+                    <p class="text-muted para-desc mb-0">Select your hosting solution and we will help you narrow down our best high-speed options to fit your needs with Coral.</p>
+                
+                    <div class="accordion mt-4 pt-2" id="buyingquestion">
+                        <div class="accordion-item rounded shadow">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button border-0 bg-white shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    How does it work ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse border-0 collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#buyingquestion">
+                                <div class="accordion-body text-muted">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item rounded shadow mt-2">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button border-0 bg-white shadow collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Do I need a designer to use Coral ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#buyingquestion">
+                                <div class="accordion-body text-muted">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item rounded shadow mt-2">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button border-0 bg-white shadow collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What do I need to do to start selling ?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#buyingquestion">
+                                <div class="accordion-body text-muted">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item rounded shadow mt-2">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button border-0 bg-white shadow collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What happens when I receive an order ?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse border-0 collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#buyingquestion">
+                                <div class="accordion-body text-muted">
+                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End -->
+
+<!-- offcanvas code  -->
+<?php
+    include "$base_dir/Components/Home/index/offcanvas.php";
+?>
+
+<?php
+$hero_content = ob_get_clean();
+
+// Include the base template
+include "$base_dir/style/base.php";
+?>

@@ -1,0 +1,12 @@
+{% for item in portfolios3|slice(0, 8) %}
+    <div class="col-md-6">
+        <div class="portfolio">
+            <a href="{{ asset( item.img ) }}" class="lightbox"><img src="{{ asset( item.img ) }}" class="img-fluid rounded shadow" alt=""></a>
+
+            <div class="content mt-3">
+                <a href="{{ path('app_portfolio_detail', { 'slug': item.title|lower|replace({' ': '-'}) }) }}" class="text-dark fs-5 fw-medium link-title">{{ item.title }}</a>
+                <p class="text-muted mb-0">{{ item.name }}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}

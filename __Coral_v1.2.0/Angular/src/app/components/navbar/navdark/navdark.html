@@ -1,0 +1,270 @@
+<header id="topnav" class="defaultscroll sticky" [ngClass]="{'nav-sticky': scrolled}">
+    <div class="container">
+        <a class="logo" routerLink="/">
+            <span class="logo-light-mode">
+                <img [src]="'assets/images/logo-dark.png'" class="l-dark" alt="">
+                <img [src]="'assets/images/logo-white.png'" class="l-light" alt="">
+            </span>
+            <img [src]="'assets/images/logo-white.png'" class="logo-dark-mode" alt="">
+        </a>
+
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle" [ngClass]="showToggleMenu ? 'open' : '' " id="isToggle" (click)="toggleMenu()">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <ul class="buy-button list-inline mb-0">
+            <li class="list-inline-item mb-0">
+                <div class="dropdown">
+                    <button type="button" class="dropdown-toggle btn btn-sm p-0 border-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i data-feather="search" class="fea icon-20 login-btn-primary"></i>
+                        <i data-feather="search" class="fea icon-20 text-white login-btn-light"></i>
+                    </button>
+                    <div class="dropdown-menu dd-menu dropdown-menu-end bg-white rounded border-0 mt-3 p-0" style="width: 240px;">
+                        <div class="search-bar">
+                            <div id="itemSearch" class="menu-search mb-0">
+                                <form role="search" method="get" id="searchItemform" class="searchform">
+                                    <input type="text" class="form-control rounded border" name="s" id="searchItem" placeholder="Search...">
+                                    <input type="submit" id="searchItemsubmit" value="Search">
+                                    <i data-feather="search" class="icons"></i>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-inline-item ps-1 mb-0">
+                <a [routerLink]="[]" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <div class="btn btn-sm btn-icon btn-pills btn-primary"><i data-feather="settings" class="fea icon-sm"></i></div>
+                </a>
+            </li>
+
+            <li class="list-inline-item ps-1 mb-0">
+                <a [routerLink]="[]" class="btn btn-sm btn-primary">Join Now</a>
+            </li>
+        </ul>
+
+        <div id="navigation" [ngClass]="showToggleMenu ? 'd-block' : 'd-none' ">
+            <ul class="navigation-menu nav-right nav-light">
+                <li class="has-submenu parent-menu-item" [ngClass]="['/','/index-saas','/index-consulting','/index-cryptocurrency','/index-digital-marketing','/index-finance','/index-it-solution','/index-hospital','/index-nft','/index-minimal-portfolio','/index-web-hosting','/index-yoga','/index-charity'].includes(current) ? 'active' : ''">
+                    <a [routerLink]="[]" (click)="openSubManu('/index-item')">Home</a><span class="menu-arrow"></span>
+                    <ul class="submenu" [ngClass]="['/index-item'].includes(subManu) ? 'open' : ''">
+                        <li [ngClass]="current === '/' ? 'active' : '' "><a routerLink="/" class="sub-menu-item">Business</a></li>
+                        <li [ngClass]="current === '/index-saas' ? 'active' : '' "><a routerLink="/index-saas" class="sub-menu-item">Saas</a></li>
+                        <li [ngClass]="current === '/index-consulting' ? 'active' : '' "><a routerLink="/index-consulting" class="sub-menu-item">Consulting</a></li>
+                        <li [ngClass]="current === '/index-cryptocurrency' ? 'active' : '' "><a routerLink="/index-cryptocurrency" class="sub-menu-item">Cryptocurrency</a></li>
+                        <li [ngClass]="current === '/index-digital-marketing' ? 'active' : '' "><a routerLink="/index-digital-marketing" class="sub-menu-item">Digital Marketing</a></li>
+                        <li [ngClass]="current === '/index-finance' ? 'active' : '' "><a routerLink="/index-finance" class="sub-menu-item">Finance</a></li>
+                        <li [ngClass]="current === '/index-it-solution' ? 'active' : '' "><a routerLink="/index-it-solution" class="sub-menu-item">IT Solutions</a></li>
+                        <li [ngClass]="current === '/index-hospital' ? 'active' : '' "><a routerLink="/index-hospital" class="sub-menu-item">Hospital / Medical</a></li>
+                        <li [ngClass]="current === '/index-nft' ? 'active' : '' "><a routerLink="/index-nft" class="sub-menu-item">NFT Marketplace</a></li>
+                        <li [ngClass]="current === '/index-minimal-portfolio' ? 'active' : '' "><a routerLink="/index-minimal-portfolio" class="sub-menu-item">Minimal Portfolio</a></li>
+                        <li [ngClass]="current === '/index-web-hosting' ? 'active' : '' "><a routerLink="/index-web-hosting" class="sub-menu-item">Web Hosting</a></li>
+                        <li [ngClass]="current === '/index-yoga' ? 'active' : '' "><a routerLink="/index-yoga" class="sub-menu-item">Yoga</a></li>
+                        <li [ngClass]="current === '/index-charity' ? 'active' : '' "><a routerLink="/index-charity" class="sub-menu-item">Charity</a></li>
+                    </ul>
+                </li>
+        
+                <li [ngClass]="current === '/aboutus' ? 'active' : '' "><a routerLink="/aboutus" class="sub-menu-item">About Us</a></li>
+
+                <li class="has-submenu parent-parent-menu-item" [ngClass]="['/services','/service-detail','/pricing','/team','/testimonial','/faqs','/nft-explore','/nft-detail','/collection','/wallet','/upload-item','/creators','/creator-profile','/profile-setting','/login','/signup','/reset-password','/lock-screen','/terms','/privacy','/comingsoon','/maintenance','/error'].includes(current) ? 'active' : ''">
+                    <a [routerLink]="[]" (click)="openSubManu('/page-item')">Pages</a><span class="menu-arrow"></span>
+                    <ul class="submenu" [ngClass]="['/page-item','/nft-item','/creator-item','/auth-item','/utility-item','/special-item'].includes(subManu) ? 'open' : ''">
+                        <li [ngClass]="current === '/services' ? 'active' : '' "><a routerLink="/services" class="sub-menu-item">Services</a></li>
+                        <li [ngClass]="current === '/service-detail' ? 'active' : '' "><a routerLink="/service-detail" class="sub-menu-item">Service Detail</a></li>
+                        <li [ngClass]="current === '/pricing' ? 'active' : '' "><a routerLink="/pricing" class="sub-menu-item">Pricing</a></li>
+                        <li [ngClass]="current === '/team' ? 'active' : '' "><a routerLink="/team" class="sub-menu-item">Team</a></li>
+                        <li [ngClass]="current === '/testimonial' ? 'active' : '' "><a routerLink="/testimonial" class="sub-menu-item">Testimonial</a></li>
+
+                        <li [ngClass]="current === '/faqs' ? 'active' : '' "><a routerLink="/faqs" class="sub-menu-item">FAQs</a></li>
+
+                        <li class="has-submenu parent-menu-item" [ngClass]="['/nft-explore','/nft-detail','/collection','/wallet','/upload-item','/creators','/creator-profile','/profile-setting'].includes(current) ? 'active' : ''">
+                            <a [routerLink]="[]" (click)="openSubManu('/nft-item')">NFT</a><span class="submenu-arrow"></span>
+                            <ul class="submenu" [ngClass]="['/nft-item','/creator-item'].includes(subManu) ? 'open' : ''">
+                                <li [ngClass]="current === '/nft-explore' ? 'active' : '' "><a routerLink="/nft-explore" class="sub-menu-item">NFT Explore</a></li>
+                                <li [ngClass]="current === '/nft-detail' ? 'active' : '' "><a routerLink="/nft-detail" class="sub-menu-item">NFT Detail</a></li>
+                                <li [ngClass]="current === '/collection' ? 'active' : '' "><a routerLink="/collection" class="sub-menu-item">Collection</a></li>
+                                <li [ngClass]="current === '/wallet' ? 'active' : '' "><a routerLink="/wallet" class="sub-menu-item">Wallet</a></li>
+                                <li [ngClass]="current === '/upload-item' ? 'active' : '' "><a routerLink="/upload-item" class="sub-menu-item">Upload Item</a></li>
+                                <li class="has-submenu child-menu-item" [ngClass]="['/creators','/creator-profile','/profile-setting'].includes(current) ? 'active' : ''">
+                                    <a [routerLink]="[]" (click)="openSubManu('/creator-item')"> Creators </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu" [ngClass]="['/creator-item'].includes(subManu) ? 'open' : ''">
+                                        <li [ngClass]="current === '/creators' ? 'active' : '' "><a routerLink="/creators" class="sub-menu-item">Creators</a></li>
+                                        <li [ngClass]="current === '/creator-profile' ? 'active' : '' "><a routerLink="/creator-profile" class="sub-menu-item">Creator Profile</a></li>
+                                        <li [ngClass]="current === '/profile-setting' ? 'active' : '' "><a routerLink="/profile-setting" class="sub-menu-item">Profile Setting</a></li>
+                                    </ul>  
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu parent-menu-item"><a [routerLink]="[]" (click)="openSubManu('/auth-item')"> Auth Pages </a><span class="submenu-arrow"></span>
+                            <ul class="submenu" [ngClass]="['/auth-item'].includes(subManu) ? 'open' : ''">
+                                <li><a routerLink="/login" class="sub-menu-item"> Login</a></li>
+                                <li><a routerLink="/signup" class="sub-menu-item"> Signup</a></li>
+                                <li><a routerLink="/reset-password" class="sub-menu-item"> Forgot Password</a></li>
+                                <li><a routerLink="/lock-screen" class="sub-menu-item"> Lock Screen</a></li>
+                            </ul> 
+                        </li>
+
+                        <li class="has-submenu parent-menu-item" [ngClass]="['/terms','/privacy'].includes(current) ? 'active' : ''"><a [routerLink]="[]" (click)="openSubManu('/utility-item')"> Utility </a><span class="submenu-arrow"></span>
+                            <ul class="submenu" [ngClass]="['/utility-item'].includes(subManu) ? 'open' : ''">
+                                <li [ngClass]="current === '/terms' ? 'active' : '' "><a routerLink="/terms" class="sub-menu-item">Terms of Services</a></li>
+                                <li [ngClass]="current === '/privacy' ? 'active' : '' "><a routerLink="/privacy" class="sub-menu-item">Privacy Policy</a></li>
+                            </ul>  
+                        </li>
+
+                        <li class="has-submenu parent-menu-item" [ngClass]="['/'].includes(current) ? 'active' : ''"><a [routerLink]="[]" (click)="openSubManu('/special-item')"> Special </a><span class="submenu-arrow"></span>
+                            <ul class="submenu" [ngClass]="['/special-item'].includes(subManu) ? 'open' : ''">
+                                <li><a routerLink="/comingsoon" class="sub-menu-item"> Coming Soon</a></li>
+                                <li><a routerLink="/maintenance" class="sub-menu-item"> Maintenance</a></li>
+                                <li><a routerLink="/error" class="sub-menu-item"> 404! Error</a></li>
+                            </ul> 
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu parent-parent-menu-item" [ngClass]="['/portfolio-masonry-two','/portfolio-masonry-three','/portfolio-masonry-four','/portfolio-masonry-five','/portfolio-masonry-six','/portfolio-creative-two','/portfolio-creative-three','/portfolio-creative-four','/portfolio-creative-five','/portfolio-creative-six','/portfolio-classic-two','/portfolio-classic-three','/portfolio-classic-four','/portfolio-classic-five','/portfolio-classic-six','/portfolio-modern-two','/portfolio-modern-three','/portfolio-modern-four','/portfolio-modern-five','/portfolio-modern-six','/portfolio-detail','/portfolio-detail-two'].includes(current) ? 'active' : ''">
+                    <a [routerLink]="[]" (click)="openSubManu('/portfolio-item')">Portfolio</a><span class="menu-arrow"></span>
+                    <ul class="submenu" [ngClass]="['/portfolio-item','/modern-item','/classic-item','/creative-item','/masonry-item'].includes(subManu) ? 'open' : ''">
+                        <li class="has-submenu child-menu-item" [ngClass]="['/portfolio-modern-two','/portfolio-modern-three','/portfolio-modern-four','/portfolio-modern-five','/portfolio-modern-six'].includes(current) ? 'active' : ''"><a [routerLink]="[]" (click)="openSubManu('/modern-item')"> Modern</a><span class="submenu-arrow"></span>
+                            <ul class="submenu" [ngClass]="['/modern-item'].includes(subManu) ? 'open' : ''">
+                                <li [ngClass]="current === '/portfolio-modern-two' ? 'active' : '' "><a routerLink="/portfolio-modern-two" class="sub-menu-item">Two Column</a></li>
+                                <li [ngClass]="current === '/portfolio-modern-three' ? 'active' : '' "><a routerLink="/portfolio-modern-three" class="sub-menu-item">Three Column</a></li>
+                                <li [ngClass]="current === '/portfolio-modern-four' ? 'active' : '' "><a routerLink="/portfolio-modern-four" class="sub-menu-item">Four Column</a></li>
+                                <li [ngClass]="current === '/portfolio-modern-five' ? 'active' : '' "><a routerLink="/portfolio-modern-five" class="sub-menu-item">Five Column</a></li>
+                                <li [ngClass]="current === '/portfolio-modern-six' ? 'active' : '' "><a routerLink="/portfolio-modern-six" class="sub-menu-item">Six Column</a></li>
+                            </ul>  
+                        </li>
+                
+                        <li class="has-submenu child-menu-item" [ngClass]="['/portfolio-classic-two','/portfolio-classic-three','/portfolio-classic-four','/portfolio-classic-five','/portfolio-classic-six'].includes(current) ? 'active' : ''"><a [routerLink]="[]" (click)="openSubManu('/classic-item')"> Classic</a><span class="submenu-arrow"></span>
+                            <ul class="submenu" [ngClass]="['/classic-item'].includes(subManu) ? 'open' : ''">
+                                <li [ngClass]="current === '/portfolio-classic-two' ? 'active' : '' "><a routerLink="/portfolio-classic-two" class="sub-menu-item">Two Column</a></li>
+                                <li [ngClass]="current === '/portfolio-classic-three' ? 'active' : '' "><a routerLink="/portfolio-classic-three" class="sub-menu-item">Three Column</a></li>
+                                <li [ngClass]="current === '/portfolio-classic-four' ? 'active' : '' "><a routerLink="/portfolio-classic-four" class="sub-menu-item">Four Column</a></li>
+                                <li [ngClass]="current === '/portfolio-classic-five' ? 'active' : '' "><a routerLink="/portfolio-classic-five" class="sub-menu-item">Five Column</a></li>
+                                <li [ngClass]="current === '/portfolio-classic-six' ? 'active' : '' "><a routerLink="/portfolio-classic-six" class="sub-menu-item">Six Column</a></li>
+                            </ul>  
+                        </li>
+                
+                        <li class="has-submenu child-menu-item" [ngClass]="['/portfolio-creative-two','/portfolio-creative-three','/portfolio-creative-four','/portfolio-creative-five','/portfolio-creative-six'].includes(current) ? 'active' : ''"><a [routerLink]="[]" (click)="openSubManu('/creative-item')"> Creative</a><span class="submenu-arrow"></span>
+                            <ul class="submenu" [ngClass]="['/creative-item'].includes(subManu) ? 'open' : ''">
+                                <li [ngClass]="current === '/portfolio-creative-two' ? 'active' : '' "><a routerLink="/portfolio-creative-two" class="sub-menu-item">Two Column</a></li>
+                                <li [ngClass]="current === '/portfolio-creative-three' ? 'active' : '' "><a routerLink="/portfolio-creative-three" class="sub-menu-item">Three Column</a></li>
+                                <li [ngClass]="current === '/portfolio-creative-four' ? 'active' : '' "><a routerLink="/portfolio-creative-four" class="sub-menu-item">Four Column</a></li>
+                                <li [ngClass]="current === '/portfolio-creative-five' ? 'active' : '' "><a routerLink="/portfolio-creative-five" class="sub-menu-item">Five Column</a></li>
+                                <li [ngClass]="current === '/portfolio-creative-six' ? 'active' : '' "><a routerLink="/portfolio-creative-six" class="sub-menu-item">Six Column</a></li>
+                            </ul>  
+                        </li>
+                
+                        <li class="has-submenu child-menu-item" [ngClass]="['/portfolio-masonry-two','/portfolio-masonry-three','/portfolio-masonry-four','/portfolio-masonry-five','/portfolio-masonry-six'].includes(current) ? 'active' : ''"><a [routerLink]="[]" (click)="openSubManu('/masonry-item')"> Masonry</a><span class="submenu-arrow"></span>
+                            <ul class="submenu" [ngClass]="['/masonry-item'].includes(subManu) ? 'open' : ''">
+                                <li [ngClass]="current === '/portfolio-masonry-two' ? 'active' : '' "><a routerLink="/portfolio-masonry-two" class="sub-menu-item">Two Column</a></li>
+                                <li [ngClass]="current === '/portfolio-masonry-three' ? 'active' : '' "><a routerLink="/portfolio-masonry-three" class="sub-menu-item">Three Column</a></li>
+                                <li [ngClass]="current === '/portfolio-masonry-four' ? 'active' : '' "><a routerLink="/portfolio-masonry-four" class="sub-menu-item">Four Column</a></li>
+                                <li [ngClass]="current === '/portfolio-masonry-five' ? 'active' : '' "><a routerLink="/portfolio-masonry-five" class="sub-menu-item">Five Column</a></li>
+                                <li [ngClass]="current === '/portfolio-masonry-six' ? 'active' : '' "><a routerLink="/portfolio-masonry-six" class="sub-menu-item">Six Column</a></li>
+                            </ul>  
+                        </li>
+                
+                        <li [ngClass]="current === '/portfolio-detail' ? 'active' : '' "><a routerLink="/portfolio-detail" class="sub-menu-item">Portfolio Detail</a></li>
+                        <li [ngClass]="current === '/portfolio-detail-two' ? 'active' : '' "><a routerLink="/portfolio-detail-two" class="sub-menu-item">Portfolio Detail Two</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu parent-parent-menu-item" [ngClass]="['/blog-sidebar','/blogs','/blog-standard-post','/blog-gallery-post','/blog-slider-post','/blog-link-post','/blog-story-post','/blog-youtube-post','/blog-html-video-post','/blog-audio-post','/blog-html-audio','/blog-blockquote-post','/blog-vimeo-post','/blog-left-sidebar-post'].includes(current) ? 'active' : ''">
+                    <a [routerLink]="[]" (click)="openSubManu('/blog-item')">Blogs</a><span class="menu-arrow"></span>
+                    <ul class="submenu" [ngClass]="['/blog-item','/blog-post-item'].includes(subManu) ? 'open' : ''">
+                        <li [ngClass]="current === '/blogs' ? 'active' : '' "><a routerLink="/blogs" class="sub-menu-item"> Blogs</a></li>
+                        <li [ngClass]="current === '/blog-sidebar' ? 'active' : '' "><a routerLink="/blog-sidebar" class="sub-menu-item"> Blog Sidebar</a></li>
+
+                        <li class="has-submenu parent-menu-item" [ngClass]="['/blog-standard-post','/blog-gallery-post','/blog-slider-post','/blog-link-post','/blog-story-post','/blog-youtube-post','/blog-html-video-post','/blog-audio-post','/blog-html-audio','/blog-blockquote-post','/blog-vimeo-post','/blog-left-sidebar-post'].includes(current) ? 'active' : ''">
+                            <a [routerLink]="[]" (click)="openSubManu('/blog-post-item')">Blog Posts</a><span class="submenu-arrow"></span>
+                            <ul class="submenu" [ngClass]="['/blog-post-item'].includes(subManu) ? 'open' : ''">
+                                <li [ngClass]="current === '/blog-standard-post' ? 'active' : '' "><a routerLink="/blog-standard-post" class="sub-menu-item">Standard Post </a></li>
+                                <li [ngClass]="current === '/blog-gallery-post' ? 'active' : '' "><a routerLink="/blog-gallery-post" class="sub-menu-item">Gallery Post </a></li>
+                                <li [ngClass]="current === '/blog-slider-post' ? 'active' : '' "><a routerLink="/blog-slider-post" class="sub-menu-item">Slider Post </a></li>
+                                <li [ngClass]="current === '/blog-link-post' ? 'active' : '' "><a routerLink="/blog-link-post" class="sub-menu-item">Link Post </a></li>
+                                <li [ngClass]="current === '/blog-story-post' ? 'active' : '' "><a routerLink="/blog-story-post" class="sub-menu-item">Story Post </a></li>
+                                <li [ngClass]="current === '/blog-youtube-post' ? 'active' : '' "><a routerLink="/blog-youtube-post" class="sub-menu-item">Youtube Post </a></li>
+                                <li [ngClass]="current === '/blog-html-video-post' ? 'active' : '' "><a routerLink="/blog-html-video-post" class="sub-menu-item">Html Video Post </a></li>
+                                <li [ngClass]="current === '/blog-audio-post' ? 'active' : '' "><a routerLink="/blog-audio-post" class="sub-menu-item">Audio Post </a></li>
+                                <li [ngClass]="current === '/blog-html-audio' ? 'active' : '' "><a routerLink="/blog-html-audio" class="sub-menu-item">Html Audio Post </a></li>
+                                <li [ngClass]="current === '/blog-blockquote-post' ? 'active' : '' "><a routerLink="/blog-blockquote-post" class="sub-menu-item">Blockquote Post </a></li>
+                                <li [ngClass]="current === '/blog-vimeo-post' ? 'active' : '' "><a routerLink="/blog-vimeo-post" class="sub-menu-item">Vimeo Post </a></li>
+                                <li [ngClass]="current === '/blog-left-sidebar-post' ? 'active' : '' "><a routerLink="/blog-left-sidebar-post" class="sub-menu-item">Left Sidebar Post </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+        
+                <li [ngClass]="current === '/contactus' ? 'active' : '' "><a routerLink="/contactus" class="sub-menu-item">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="offcanvas offcanvas-end shadow border-0" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header p-4 border-bottom">
+        <h5 id="offcanvasRightLabel" class="mb-0">
+            <img [src]="'assets/images/logo-dark.png'" class="light-version" alt="">
+            <img [src]="'assets/images/logo-light.png'" class="dark-version" alt="">
+        </h5>
+        <button type="button" class="btn-close d-flex align-items-center text-dark" data-bs-dismiss="offcanvas" aria-label="Close"><i class="mdi mdi-close fs-4"></i></button>
+    </div>
+    <div class="offcanvas-body p-4">
+        <div class="row">
+            <div class="col-12">
+                <img [src]="'assets/images/contact.png'" class="img-fluid" alt="">
+                <form>
+                    <div class="my-3 text-center">
+                        <h6 class="text-uppercase mb-0 fw-semibold">Sign In</h6>
+                    </div>
+                
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Your Email</label>
+                        <input name="email" id="email" type="email" class="form-control" placeholder="example@website.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold" for="loginpass">Password</label>
+                        <input type="password" class="form-control" id="loginpass" placeholder="Password">
+                    </div>
+                
+                    <div class="d-flex justify-content-between">
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-label form-check-label text-muted" for="flexCheckDefault">Remember me</label>
+                            </div>
+                        </div>
+                        <span class="forgot-pass text-muted small mb-0"><a [routerLink]="'/reset-password'" class="text-muted">Forgot password ?</a></span>
+                    </div>
+    
+                    <button class="btn btn-primary w-100" type="submit">Sign in</button>
+
+                    <div class="col-12 text-center mt-3">
+                        <span><span class="text-muted me-2 small">Don't have an account ?</span> <a [routerLink]="'/reset-password'" class="text-dark fw-semibold small">Sign Up</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas-footer p-4 border-top text-center">
+        <ul class="list-unstyled social-icon mb-0">
+            <li class="list-inline-item me-1"><a href="https://dribbble.com/shreethemes" target="_blank" class="rounded"><i data-feather="dribbble" class="fea icon-sm align-middle" title="dribbble"></i></a></li>
+            <li class="list-inline-item me-1"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="rounded"><i data-feather="linkedin" class="fea icon-sm align-middle" title="Linkedin"></i></a></li>
+            <li class="list-inline-item me-1"><a href="https://www.facebook.com/shreethemes" target="_blank" class="rounded"><i data-feather="facebook" class="fea icon-sm align-middle" title="facebook"></i></a></li>
+            <li class="list-inline-item me-1"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="rounded"><i data-feather="instagram" class="fea icon-sm align-middle" title="instagram"></i></a></li>
+            <li class="list-inline-item me-1"><a href="https://twitter.com/shreethemes" target="_blank" class="rounded"><i data-feather="twitter" class="fea icon-sm align-middle" title="twitter"></i></a></li>
+        </ul>
+    </div>
+</div>

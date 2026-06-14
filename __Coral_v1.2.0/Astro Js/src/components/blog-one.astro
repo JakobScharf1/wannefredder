@@ -1,0 +1,29 @@
+---
+import { blogData } from "../data/data";
+---
+
+<div class="row g-4">
+    {blogData.slice(0,3).map((item)=>( 
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog position-relative overflow-hidden shadow rounded p-4">
+                <div class="position-relative">
+                    <div class="blog-image position-relative overflow-hidden rounded shadow">
+                        <img src={item.image.src} class="img-fluid" alt=""/>
+                    </div>
+
+                    <div class="position-absolute top-100 start-0 translate-middle-y ms-2">
+                        <a href="" class="badge bg-primary">{item.tag}</a>
+                    </div>
+                </div>
+
+                <div class="pt-4">
+                    <a href="/blog-standard-post" class="text-dark title h5">{item.title}</a>
+
+                    <p class="text-muted my-2">{item.desc}</p>
+
+                    <a href="/blog-standard-post" class="text-dark read-more">Read More <i class="mdi mdi-chevron-right align-middle"></i></a>
+                </div>
+            </div>
+        </div>
+    ))}
+</div>

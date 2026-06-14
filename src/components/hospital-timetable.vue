@@ -1,0 +1,258 @@
+<template>
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h4 class="title mb-3">Doctors Availability</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">We value every human life placed in our hands and constantly work towards meeting the expectations of our patients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="table-responsive rounded">
+                            <table class="table table-center table-bordered bg-white mb-0">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center py-4" style="min-width: 120px;">Time Table</th>
+                                        <th class="text-center py-4" style="min-width: 200px;">Monday</th>
+                                        <th class="text-center py-4" style="min-width: 200px;">Tuesday</th>
+                                        <th class="text-center py-4" style="min-width: 200px;">Wednesday</th>
+                                        <th class="text-center py-4" style="min-width: 200px;">Thursday</th>
+                                        <th class="text-center py-4" style="min-width: 200px;">Friday</th>
+                                        <th class="text-center py-4" style="min-width: 200px;">Saturday</th>
+                                        <th class="text-center py-4" style="min-width: 200px;">Sunday</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center py-5">09:00AM</th>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team1" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Calvin Carlo</h6>
+                                                    <small class="text-muted">Eye Care</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00AM - 10:00AM</small>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team3" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Alia Reddy</h6>
+                                                    <small class="text-muted">Psychotherapy</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00AM - 01:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="text-center py-5">11:00AM</th>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team2" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Cristino Murphy</h6>
+                                                    <small class="text-muted">Gynecology</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">11:00AM - 04:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team5" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Jennifer Ballance</h6>
+                                                    <small class="text-muted">Cardiology</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">11:00AM - 12:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team4" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Toni Kovar</h6>
+                                                    <small class="text-muted">Orthopedic</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00AM - 10:00AM</small>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th class="text-center py-5">02:00PM</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team6" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Tara Arrington</h6>
+                                                    <small class="text-muted">Neurology</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">02:00PM - 04:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team5" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Jennifer Ballance</h6>
+                                                    <small class="text-muted">Cardiology</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">11:00AM - 12:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th class="text-center py-5">04:00PM</th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team6" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Tara Arrington</h6>
+                                                    <small class="text-muted">Neurology</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">04:00PM - 05:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team6" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Tara Arrington</h6>
+                                                    <small class="text-muted">Neurology</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">04:30PM - 06:00PM</small>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th class="text-center py-5">06:00PM</th>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team3" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Alia Reddy</h6>
+                                                    <small class="text-muted">Psychotherapy</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">06:00PM - 09:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team4" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Toni Kovar</h6>
+                                                    <small class="text-muted">Orthopedic</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">07:00PM - 08:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team5" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Jennifer Ballance</h6>
+                                                    <small class="text-muted">Cardiology</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">06:00PM - 07:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team3" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Alia Reddy</h6>
+                                                    <small class="text-muted">Psychotherapy</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">06:00PM - 07:00PM</small>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th class="text-center py-5">09:00PM</th>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team4" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Toni Kovar</h6>
+                                                    <small class="text-muted">Orthopedic</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00PM - 10:00PM</small>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team5" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Jennifer Ballance</h6>
+                                                    <small class="text-muted">Cardiology</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00PM - 10:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="d-flex mb-3">
+                                                <img :src="team4" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                                <div class="ms-3">
+                                                    <h6 class="text-dark mb-0 d-block">Toni Kovar</h6>
+                                                    <small class="text-muted">Orthopedic</small>
+                                                </div>
+                                            </div>
+                                            <small class="bg-soft-primary rounded py-1 px-2 d-block text-center">09:00PM - 10:00PM</small>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</template>
+
+<script setup>
+import team1 from '@/assets/images/team/01.jpg'
+import team2 from '@/assets/images/team/02.jpg'
+import team3 from '@/assets/images/team/03.jpg'
+import team4 from '@/assets/images/team/04.jpg'
+import team5 from '@/assets/images/team/05.jpg'
+import team6 from '@/assets/images/team/06.jpg'
+
+</script>

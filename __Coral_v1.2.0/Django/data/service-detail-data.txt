@@ -1,0 +1,160 @@
+from App.models import Service
+from django.utils.text import slugify
+
+# Define the service data
+services = [
+        {
+            'id' : 1,
+            'icon' : 'aperture', 
+            'title' : 'Branding Strategy',
+            'desc' : 'Design better and spend less time without restricting creative freedom. Combine layouts, customize everything.',
+            'style' : 'col-lg-4 col-md-6 col-12',
+        },
+        {
+            'id' : 2,
+            'icon' : 'send', 
+            'title' : 'Digital Solutions',
+            'desc' : 'Design better and spend less time without restricting creative freedom. Combine layouts, customize everything.',
+            'style' : 'col-lg-4 col-md-6 col-12 mt-4 mt-md-0 pt-2 pt-md-0',
+        },
+        {
+            'id' : 3,
+            'icon' : 'users', 
+            'title' : 'Social Media',
+            'desc' : 'Design better and spend less time without restricting creative freedom. Combine layouts, customize everything.',
+            'style' : 'col-lg-4 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0',
+        },
+        {
+            'id' : 4,
+            'icon' : 'star', 
+            'title' : 'Insightful Analytics',
+            'desc' : "Design better and spend less time without restricting creative freedom. Combine layouts, customize everything.",
+        },
+        {
+            'id' : 5,
+            'icon' : 'bookmark', 
+            'title' : 'Business Consultation',
+            'desc' : "Design better and spend less time without restricting creative freedom. Combine layouts, customize everything.",
+        },
+        {
+            'id' : 6,
+            'icon' : 'message-circle', 
+            'title' : '24-7 Support',
+            'desc' : "Design better and spend less time without restricting creative freedom. Combine layouts, customize everything.",
+        },
+        {
+            'id' : 7,
+            'img' : '/static/assets/images/service/cardiology.svg',
+            'title' : 'Cardiology',
+            'desc' : 'Success needs hard work & quality work.',
+        },
+        {
+            'id' : 8,
+            'img' : '/static/assets/images/service/neurology.svg',
+            'title' : 'Neurology',
+            'desc' : 'Success needs hard work & quality work.',
+        },
+        {
+            'id' : 9,
+            'img' : '/static/assets/images/service/orthopaedic.svg',
+            'title' : 'Orthopaedic',
+            'desc' : 'Success needs hard work & quality work.',
+        },
+        {
+            'id' : 10,
+            'img' : '/static/assets/images/service/gynecology.svg',
+            'title' : 'Gynecology',
+            'desc' : 'Success needs hard work & quality work.',
+        },
+        {
+            'id' : 11,
+            'img' : '/static/assets/images/service/dermatology.svg',
+            'title' : 'Dermatology',
+            'desc' : 'Success needs hard work & quality work.',
+        },
+        {
+            'id' : 12,
+            'icon' : 'zap', 
+            'title' : 'Create Item', 
+            'desc' : "Success needs hard work. Don't listen to these 'get rich quick' schemes.", 
+        },
+        {
+            'id' : 13,
+            'icon' : 'bookmark', 
+            'title' : 'Collect', 
+            'desc' : "Success needs hard work. Don't listen to these 'get rich quick' schemes.", 
+        },
+        {
+            'id' : 14,
+            'icon' : 'target', 
+            'title' : 'Sell Item', 
+            'desc' : "Success needs hard work. Don't listen to these 'get rich quick' schemes.", 
+        },
+        {
+            'id' : 15,
+            'img' : '/static/assets/images/asana/ardha_padmasana.png',
+            'title' : 'Ardha Padmasana', 
+            'desc' : "Success needs hard work. Don't listen to these 'get rich quick' schemes.", 
+        },
+        {
+            'id' : 16,
+            'img' : '/static/assets/images/asana/bhujangasana.png',
+            'title' : 'Bhujangasana', 
+            'desc' : "Success needs hard work. Don't listen to these 'get rich quick' schemes.", 
+        },
+        {
+            'id' : 17,
+            'img' : '/static/assets/images/asana/halasana.png',
+            'title' : 'Halasana', 
+            'desc' : "Success needs hard work. Don't listen to these 'get rich quick' schemes.", 
+        },
+        {
+            'id' : 18,
+            'img' : '/static/assets/images/asana/natarajasana.png',
+            'title' : 'Natarajasana', 
+            'desc' : "Success needs hard work. Don't listen to these 'get rich quick' schemes.", 
+        },
+        {
+            'id' : 19,
+            'icon' : 'aperture',
+            'title' : 'Breakfast Programme', 
+            'desc' : "Success needs hard work. Don't listen to these 'get rich quick' schemes.", 
+        },
+        {
+            'id' : 20,
+            'icon' : 'send',
+            'title' : 'Food Assistance', 
+            'desc' : "Success needs hard work. Don't listen to these 'get rich quick' schemes.", 
+        },
+        {
+            'id' : 21,
+            'icon' : 'users',
+            'title' : 'Social Works', 
+            'desc' : "Success needs hard work. Don't listen to these 'get rich quick' schemes.", 
+        }
+    ]
+
+# Loop through the data and create service entries
+for service in services:
+    new_service = Service.objects.create(
+        id=service['id'],
+        title=service['title'],
+    )
+    
+    new_service.slug = slugify(new_service.title)
+    new_service.save()
+----------------------------------------------
+#check service data
+-----------------------------------------------
+from App.models import Service
+
+services = Service.objects.all()
+for service in services:
+    print(service.title, service.slug)
+
+-------------------------------------------------
+#delete service data
+-------------------------------------------------
+from App.models import Service
+
+Service.objects.all().delete()
