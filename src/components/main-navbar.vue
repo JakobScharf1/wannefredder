@@ -3,10 +3,10 @@
         <div class="container">
             <router-link class="logo" to="/">
                 <span class="logo-light-mode">
-                    <img :src="logoDark" class="l-dark" style="width: 300px" alt=""/>
-                    <img :src="logoLight" class="l-light" style="width: 300px" alt=""/>
+                    <img :src="logoDark" class="l-dark" alt=""/>
+                    <img :src="logoLight" class="l-light" alt=""/>
                 </span>
-                <img :src="logoLight" class="logo-dark-mode" style="width: 300px" alt=""/>
+                <img :src="logoLight" class="logo-dark-mode" alt=""/>
             </router-link>
 
             <div class="menu-extras">

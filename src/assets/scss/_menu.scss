@@ -20,6 +20,15 @@
     .logo {
         float: left;
         color: $dark !important;
+        img {
+            height: 40px;
+            width: auto;
+        }
+        @media (max-width: 768px){
+            img {
+                height: 30px;
+            }
+        }
         .l-dark,
         .logo-dark-mode {
             display: none;
