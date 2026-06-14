@@ -1,7 +1,5 @@
 <template>
     <div>
-        <NavLight/>
-
         <section class="bg-half-170 d-table w-100" :style="{backgroundImage:`url(${bg})`}">
             <div class="bg-overlay bg-gradient-overlay"></div>
             <div class="container">
@@ -145,17 +143,10 @@
                 </div>
             </div>
         </section>
-
-        <FooterOne/>
-
-        <ScrollToTop/>
     </div>
 </template>
 
 <script setup>
-    import NavLight from '@/components/navbar/nav-light.vue';
     import bg from '@/assets/images/hero/pages.jpg'
     import contactImg from '@/assets/images/contact.png'
-    import FooterOne from '@/components/footer-one.vue';
-    import ScrollToTop from '@/components/scroll-to-top.vue';
 </script>

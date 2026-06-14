@@ -1,6 +1,0 @@
-{% for item in services2 %}
-    <a href="{{ path('app_service_detail', { 'slug': item.title|lower|replace({' ': '-'}) }) }}" class="bg-light rounded d-flex justify-content-between text-dark py-3 px-4 {{ item.style }}">
-        <span class="fw-semibold">{{ item.title }}</span>
-        <i class="mdi mdi-chevron-right align-middle"></i>
-    </a>
-{% endfor %}

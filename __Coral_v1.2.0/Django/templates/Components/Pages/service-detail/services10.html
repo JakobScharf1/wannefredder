@@ -1,6 +1,0 @@
-{% for item in services2 %}
-    <a href="{% url 'App:service_detail' title=item.title|slugify %}" class="bg-light rounded d-flex justify-content-between text-dark py-3 px-4 {{ item.style }}">
-        <span class="fw-semibold">{{ item.title }}</span>
-        <i class="mdi mdi-chevron-right align-middle"></i>
-    </a>
-{% endfor %}

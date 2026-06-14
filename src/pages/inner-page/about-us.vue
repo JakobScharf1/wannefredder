@@ -1,7 +1,5 @@
 <template>
     <div>
-        <NavLight/>
-
         <section class="bg-half-170 d-table w-100" :style="{backgroundImage:`url(${bg})`,backgroundPosition:'center'}">
             <div class="bg-overlay bg-gradient-overlay"></div>
             <div class="container">
@@ -110,9 +108,6 @@
             </div>
         </section>
 
-        <FooterOne/>
-
-        <ScrollToTop/>
         
     </div>
 </template>
@@ -122,9 +117,6 @@ import bg from '@/assets/images/hero/pages.jpg'
 
 import AboutImage from '@/components/about/about-image.vue';
 import CtaTwo from '@/components/cta/cta-two.vue';
-import FooterOne from '@/components/footer-one.vue';
-import NavLight from '@/components/navbar/nav-light.vue';
-import ScrollToTop from '@/components/scroll-to-top.vue';
 import TeamOne from '@/components/team/team-one.vue';
 
 import { counterData } from '@/data/data';

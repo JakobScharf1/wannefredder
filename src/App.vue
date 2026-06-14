@@ -1,9 +1,12 @@
 <template>
+  <NavBar/>
   <router-view/>
-  <YoutubeVideo/>
+  <FooterOne />
+  <ScrollToTop/>
 </template>
 
 <script setup>
-import YoutubeVideo from './components/youtube-video.vue';
-
+import NavBar from '@/components/main-navbar.vue';
+import FooterOne from '@/components/footer-one.vue';
+import ScrollToTop from '@/components/scroll-to-top.vue';
 </script>

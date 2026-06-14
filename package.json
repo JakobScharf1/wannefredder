@@ -1,7 +1,7 @@
 {
-  "name": "coral",
+  "name": "wannefredder",
   "version": "1.0.0",
-  "description": "Coral - Vue Js Multipurpose Landing Template",
+  "description": "Der Wannefredder",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -46,11 +46,5 @@
       "parser": "@babel/eslint-parser"
     },
     "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead",
-    "not ie 11"
-  ]
+  }
 }
