@@ -1,0 +1,17 @@
+<template>
+  <div class="content-wrapper">
+    <HeadersHeader1 bg="bg-gray" />
+    <AboutAbout1Hero />
+    <AboutAbout1Intro />
+    <AboutAbout1Process />
+    <AboutAbout1Testimonials />
+    <AboutAbout1Team />
+    <AboutAbout1Facts />
+    <AboutAbout1Contact />
+  </div>
+
+  <FootersFooter12 />
+</template>
+<script setup></script>
+
+<style lang="scss" scoped></style>
