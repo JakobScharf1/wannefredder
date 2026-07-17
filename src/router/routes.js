@@ -22,5 +22,37 @@ export const routes = [
     meta: {
       title: "Werbeanzeigen || PLACEHOLDER"
     }
+  },
+  {
+    path: "/abo",
+    name: "Abonnement",
+    component: () => import("@/views/Abonnement.vue"),
+    meta: {
+      title: "Abonnement || PLACEHOLDER"
+    }
+  },
+  {
+    path: "/unterstuetzen",
+    name: "Unterstützen",
+    component: () => import("@/views/Unterstuetzen.vue"),
+    meta: {
+      title: "Unterstützen || PLACEHOLDER"
+    }
+  },
+  {
+    path: "/mitmachen",
+    name: "Mitmachen",
+    component: () => import("@/views/Mitmachen.vue"),
+    meta: {
+      title: "Mitmachen || PLACEHOLDER"
+    }
+  },
+  {
+    path: "/foerdern",
+    name: "Fördern",
+    component: () => import("@/views/Foerdern.vue"),
+    meta: {
+      title: "Fördern || PLACEHOLDER"
+    }
   }
 ];

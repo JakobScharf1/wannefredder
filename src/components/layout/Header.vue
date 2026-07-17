@@ -64,31 +64,31 @@
               <a href="https://wannefredder.sumupstore.com/" target="_blank">Shop</a>
             </li>
             <li class="nav-item mobile-only">
-              <router-link to="/veranstaltungen">Veranstaltungen</router-link>
+              <router-link to="/veranstaltungen" @click="menuClose">Veranstaltungen</router-link>
             </li>
             <li class="nav-item mobile-only">
-              <router-link to="/gewinnspiel">Gewinnspiel</router-link>
+              <router-link to="/gewinnspiel" @click="menuClose">Gewinnspiel</router-link>
             </li>
             <li class="nav-item">
-              <router-link>Werbeanzeigen</router-link>
+              <router-link to="/werbeanzeigen" @click="menuClose">Werbeanzeigen</router-link>
             </li>
             <li class="nav-item">
-              <router-link>Abonnement</router-link>
+              <router-link to="/abo" @click="menuClose">Abonnement</router-link>
             </li>
             <li class="nav-item">
-              <router-link>Kleinanzeigen</router-link>
+              <router-link to="/kleinanzeigen" @click="menuClose">Kleinanzeigen</router-link>
             </li>
             <li class="nav-item">
-              <router-link>Ausgaben</router-link>
+              <router-link to="/ausgaben" @click="menuClose">Ausgaben</router-link>
             </li>
             <li class="nav-item">
-              <router-link>Radio</router-link>
+              <router-link to="/radio" @click="menuClose">Radio</router-link>
             </li>
             <li class="nav-item">
-              <router-link>Umfragen</router-link>
+              <router-link to="/umfragen" @click="menuClose">Umfragen</router-link>
             </li>
             <li class="nav-item">
-              <router-link>Galerie</router-link>
+              <router-link to="/galerie" @click="menuClose">Galerie</router-link>
             </li>
           </ul>
 

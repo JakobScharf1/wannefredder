@@ -21,6 +21,12 @@
       >Gewinnspiel</router-link
     >
   </li>
+  <li class="nav-item">
+    <router-link
+      :class="['nav-link', { active: isActiveMenu('/unterstuetzen') }]"
+      to="/unterstuetzen"
+    >Unterstützen</router-link>
+  </li>
 </template>
 
 <script setup>

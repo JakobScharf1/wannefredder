@@ -84,6 +84,7 @@
                           Fragen zu Inhalten
                         </option>
                         <option value="Leserbrief">Leser:innenbrief</option>
+                        <option value="Mitmachen">Mitmachen</option>
                         <option value="Werbeanzeigen">Werbeanzeigen</option>
                       </select>
                       <div class="valid-feedback">Looks good!</div>

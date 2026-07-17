@@ -6,8 +6,8 @@ import initPrism from "@/utlis/initPrism";
 import initPlayer from "@/utlis/initVideoplayer";
 import { useRoute } from "vue-router";
 import { injectSvg } from "./utlis/injextSvg";
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import Header from "./components/layout/Header.vue";
+import Footer from "./components/layout/Footer.vue";
 // Get the current route
 const route = useRoute();
 

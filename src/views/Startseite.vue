@@ -26,12 +26,9 @@
 </template>
 
 <script setup>
-import Header from "@/components/Header.vue";
 import Hero from "@/components/Hero.vue";
 import Intro from "@/components/Intro.vue";
 import NewsletterBanner from "@/components/NewsletterBanner.vue";
 import Foerderer from "@/components/Foerderer.vue";
 import PageKacheln from "@/components/PageKacheln.vue";
-import Footer from "@/components/Footer.vue";
-
 </script>
