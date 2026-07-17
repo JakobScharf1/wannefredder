@@ -44,7 +44,7 @@ export const routes = [
     name: "Mitmachen",
     component: () => import("@/views/Mitmachen.vue"),
     meta: {
-      title: "Mitmachen || PLACEHOLDER"
+      title: "Mitmachen || PLACEHOLDER"
     }
   },
   {
@@ -52,7 +52,15 @@ export const routes = [
     name: "Fördern",
     component: () => import("@/views/Foerdern.vue"),
     meta: {
-      title: "Fördern || PLACEHOLDER"
+      title: "Fördern || PLACEHOLDER"
+    }
+  },
+  {
+    path: "/kleinanzeigen",
+    name: "Kleinanzeigen",
+    component: () => import("@/views/Kleinanzeigen.vue"),
+    meta: {
+      title: "Kleinanzeigen || Kleinanzeigen"
     }
   }
 ];
