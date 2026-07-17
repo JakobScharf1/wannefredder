@@ -6,9 +6,9 @@
           <div class="widget">
             <img
               class="mb-4"
-              src="/assets/img/logo-light.png"
-              srcset="/assets/img/logo-light@2x.png 2x"
+              :src="meta.logo"
               alt="photo"
+              style="filter: invert(1)"
             />
             <p class="mb-4">
               © {{ new Date().getFullYear() }} Brombeerland gUG.
@@ -19,6 +19,7 @@
                     v-for="(socialMedia, index) in socialMediaLinks"
                     :key="index"
                     :href="socialMedia.href"
+                    target="_blank"
                 >
                     <i :class="socialMedia.iconClass"></i>
                 </a>
@@ -31,11 +32,13 @@
         <div class="col-md-4 col-lg-3">
           <div class="widget">
             <h4 class="widget-title text-white mb-3">Kontakt</h4>
+            <router-link class="text-sky" to="/kontakt">Kontaktformular</router-link>
             <address class="pe-xl-15 pe-xxl-17">
-              ADRESSE
+              {{ meta.strasse }}<br/>
+              {{ meta.ort }}
             </address>
-            <a href="mailto:email">EMAIL</a><br />
-            TELNR
+            <a :href="`mailto:${meta.email}`" class="text-sky">{{ meta.email }}</a><br />
+            {{ meta.tel }}
           </div>
           <!-- /.widget -->
         </div>
@@ -44,10 +47,10 @@
           <div class="widget">
             <h4 class="widget-title text-white mb-3">Mehr erfahren</h4>
             <ul class="list-unstyled mb-0">
-              <li><router-link class="d-block mb-2" to="/ueber">Über uns</router-link></li>
-              <li><router-link class="d-block mb-2" to="/leitbild">Leitbild</router-link></li>
-              <li><router-link class="d-block mb-2" to="/datenschutz">Datenschutz</router-link></li>
-              <li><router-link class="d-block" to="/impressum">Impressum</router-link></li>
+              <li><router-link class="d-block mb-1 text-sky" to="/ueber">Über uns</router-link></li>
+              <li><router-link class="d-block mb-1 text-sky" to="/leitbild">Leitbild</router-link></li>
+              <li><router-link class="d-block mb-1 text-sky" to="/datenschutz">Datenschutz</router-link></li>
+              <li><router-link class="d-block text-sky" to="/impressum">Impressum</router-link></li>
             </ul>
           </div>
           <!-- /.widget -->
@@ -99,10 +102,13 @@
 
 <script setup>
 import CommonScrolltop from "@/common/Scrolltop.vue";
+import { useMetaStore } from "@/stores/metadata";
+
+const meta = useMetaStore()
 
 const socialMediaLinks = [
-  { id: 1, href: "#", iconClass: "uil uil-facebook-f" },
-  { id: 2, href: "#", iconClass: "uil uil-instagram" },
+  { id: 1, href: meta.facebook, iconClass: "uil uil-facebook-f" },
+  { id: 2, href: meta.instagram, iconClass: "uil uil-instagram" },
 ];
 
 function submitNewsletter() {}

@@ -62,5 +62,45 @@ export const routes = [
     meta: {
       title: "Kleinanzeigen || Kleinanzeigen"
     }
-  }
+  },
+  {
+    path: "/galerie",
+    name: "Galerie",
+    component: () => import("@/views/Galerie.vue"),
+    meta: {
+      title: "Galerie || PLACEHOLDER"
+    }
+  },
+  {
+    path: "/ueber",
+    name: "Über uns",
+    component: () => import("@/views/Ueber.vue"),
+    meta: {
+      title: "Über uns || PLACEHOLDER"
+    }
+  },
+  {
+    path: "/kontakt",
+    name: "Kontakt",
+    component: () => import("@/views/Kontakt.vue"),
+    meta: {
+      title: "Kontakt || PLACEHOLDER"
+    }
+  },
+  {
+    path: "/impressum",
+    name: "Impressum",
+    component: () => import("@/views/Impressum.vue"),
+    meta: {
+      title: "Impressum || PLACEHOLDER"
+    }
+  },
+  {
+    path: "/datenschutz",
+    name: "Datenschutzerklärung",
+    component: () => import("@/views/Datenschutz.vue"),
+    meta: {
+      title: "Datenschutz || PLACEHOLDER"
+    }
+  },
 ];

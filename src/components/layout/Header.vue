@@ -12,8 +12,7 @@
           <div class="navbar-brand w-100">
             <router-link to="/">
               <img
-                src="/assets/img/logo-dark.png"
-                srcset="/assets/img/logo-dark@2x.png 2x"
+                :src="meta.logo"
                 alt="photo"
               />
             </router-link>
@@ -105,6 +104,9 @@
 import { onBeforeUnmount, onMounted, ref, watch } from "vue";
 import HeaderNavItems from "./HeaderNavItems.vue";
 import HeaderSocials from "./HeaderSocials.vue";
+import { useMetaStore } from "@/stores/metadata.js";
+
+const meta = useMetaStore()
 
 const isMenuOpen = ref(false);
 

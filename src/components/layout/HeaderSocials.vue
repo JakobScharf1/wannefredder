@@ -10,9 +10,13 @@
 </template>
 
 <script setup>
+import { useMetaStore } from '@/stores/metadata';
+
+const meta = useMetaStore()
+
 const socialMediaLinks = [
-  { id: 2, href: "#", iconClass: "uil uil-facebook-f" },
-  { id: 4, href: "#", iconClass: "uil uil-instagram" },
+  { id: 2, href: meta.facebook, iconClass: "uil uil-facebook-f" },
+  { id: 4, href: meta.instagram, iconClass: "uil uil-instagram" },
 ];
 </script>
 

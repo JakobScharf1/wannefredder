@@ -11,8 +11,8 @@
           <h2 class="fs-16 text-uppercase ls-xl text-dark mb-4">
             TOP-SUBTITLE
           </h2>
-          <h1 class="display-1 fs-58 mb-7">
-            HERO-TITLE
+          <h1 class="display-1 fs-58 mb-7 text-uppercase">
+            {{ meta.title }}
           </h1>
           <div
             class="d-flex justify-content-center mb-5 mb-md-0"
@@ -40,7 +40,11 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { useMetaStore } from '@/stores/metadata';
+
+const meta = useMetaStore()
+</script>
 
 <style lang="scss" scoped>
 .hero-section {

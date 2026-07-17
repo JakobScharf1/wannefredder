@@ -8,8 +8,12 @@ import { useRoute } from "vue-router";
 import { injectSvg } from "./utlis/injextSvg";
 import Header from "./components/layout/Header.vue";
 import Footer from "./components/layout/Footer.vue";
+import "aos/dist/aos.css";
+import { useMetaStore } from "./stores/metadata";
+
 // Get the current route
 const route = useRoute();
+const metaStore = useMetaStore();
 
 // Define a reactive variable to store the current route path
 
@@ -26,6 +30,8 @@ onMounted(() => {
     duration: 1400,
     // once: true,
   });
+  
+  metaStore.fetchMeta()
 });
 
 watch(
@@ -39,8 +45,6 @@ watch(
     });
   }
 );
-
-import "aos/dist/aos.css"; // Import the AOS CSS
 </script>
 
 <template>
