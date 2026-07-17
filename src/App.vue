@@ -6,6 +6,8 @@ import initPrism from "@/utlis/initPrism";
 import initPlayer from "@/utlis/initVideoplayer";
 import { useRoute } from "vue-router";
 import { injectSvg } from "./utlis/injextSvg";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 // Get the current route
 const route = useRoute();
 
@@ -41,7 +43,17 @@ watch(
 import "aos/dist/aos.css"; // Import the AOS CSS
 </script>
 
-<template><RouterView /></template>
+<template>
+    <div class="navy-theme">
+        <div class="content-wrapper">
+
+            <Header />
+            <RouterView />
+            <Footer />
+
+        </div>
+    </div>
+</template>
 
 <style lang="css">
 @import "../public/assets/css/plugins.css";

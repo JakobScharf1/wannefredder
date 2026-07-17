@@ -7,6 +7,11 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+  if (to.meta.externalRedirect) {
+    window.location.href = to.meta.externalRedirect
+    return false
+  }
+
   document.title = to.meta.title;
   next();
 
